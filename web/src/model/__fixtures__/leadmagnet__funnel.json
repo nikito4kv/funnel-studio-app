@@ -1,0 +1,1092 @@
+{
+ "schema_version": 1,
+ "id": "leadmagnet_cheatsheet",
+ "title": "",
+ "source": {
+  "launch": "leadmagnet",
+  "path": "launches/leadmagnet/funnel.yaml",
+  "extends": null,
+  "own_keys": []
+ },
+ "branch_router": null,
+ "entry_variants": [],
+ "webinar_room": null,
+ "air_email_profile": "",
+ "max_video_note_caption": true,
+ "resend_entry_on_repeat": false,
+ "steps": [
+  {
+   "id": "ae782333-9441-5260-89e1-0175f93e18c0",
+   "key": "m_hello",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, welcome!</b>\n\nYour free formula cheat-sheet is almost yours. Tell me where to send it.\n",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": [
+     {
+      "when": {
+       "utm_source": "ads",
+       "utm_medium": null,
+       "utm_campaign": null,
+       "trigger": null,
+       "lm_post_id": null,
+       "lm_post_id_in": [],
+       "platforms": []
+      },
+      "text": "<b>{Имя}, you came from our ad – here is your free cheat-sheet!</b>\n\n25 formulas on one page. Tell me where to send it.\n",
+      "text_max": null,
+      "buttons": null,
+      "claim_button_text": null
+     },
+     {
+      "when": {
+       "utm_source": "blog",
+       "utm_medium": null,
+       "utm_campaign": null,
+       "trigger": null,
+       "lm_post_id": null,
+       "lm_post_id_in": [],
+       "platforms": []
+      },
+      "text": "<b>{Имя}, glad you liked the article!</b>\n\nThe formula cheat-sheet from the post is ready for you. Tell me where to send it.\n",
+      "text_max": null,
+      "buttons": null,
+      "claim_button_text": null
+     }
+    ]
+   },
+   "media": {
+    "image": "./static/cheatsheet.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "76b5489f-eefa-5fe7-bef6-cfdffa1d6da1",
+   "key": "m_email",
+   "type": "email_request",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>What is your e-mail?</b>\n\nI will send the PDF there and nothing else without your consent.\n",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": true,
+    "text_if_known": "You are already in the list – sending the cheat-sheet to your e-mail.\n",
+    "retry_text": "That does not look like an e-mail 🙈 Send it in the form name@example.com.\n"
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "6431fba0-d22f-5251-a824-67e37eae521d",
+   "key": "m_deliver",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>Done!</b> Check your inbox – and here is a direct link 👇\n",
+     "buttons": [
+      {
+       "text": "📄 OPEN THE CHEAT-SHEET",
+       "url": "{channel.link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "3e78e575-f769-5bf5-a63a-46584bca1638",
+   "key": "m_choose",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>What do you do with spreadsheets most often?</b>\n\nPick one – I will send you the lesson that fits.\n",
+     "buttons": [],
+     "claim_button_text": "📊 I BUILD REPORTS"
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "dccdb37c-8a0d-5282-bcd8-ae136ddb70d2",
+   "key": "m_path_reports",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>Reports: three habits that save an hour a day</b>\n\n1. One source sheet, many views.\n2. Named ranges instead of cell addresses.\n3. A \"last refreshed\" cell that never lies.\n",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "3c1238c5-8c29-51f3-a85f-0152505ba39b",
+   "key": "m_poll_jump",
+   "type": "jump",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "d615aca0-96ef-579d-99b8-5dabffd116a2",
+   "key": "m_nudge",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, still there?</b>\n\nTell me what you build most often and I will pick the right lesson.\n",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "6b939e31-bf43-5162-9c5d-6c2b5a487009",
+   "key": "m_final",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>That is all for the free part</b>\n\nIf you want to go deeper, the full course covers 12 lessons with templates.\n",
+     "buttons": [],
+     "claim_button_text": "🎟 SEE THE FULL COURSE"
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/cheatsheet.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": true
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "6555bf4c-a1d1-5ea7-8044-1ecf04a11948",
+   "key": "m_course",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>The full course</b>\n\n12 lessons, templates for every case and feedback on your homework.\n",
+     "buttons": [
+      {
+       "text": "OPEN THE COURSE PAGE",
+       "url": "https://example.com/course",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  }
+ ],
+ "edges": [
+  {
+   "id": "c7a6c1ab-2fc8-5b2b-bac7-c9fe1f4e8b74",
+   "from_step": "ae782333-9441-5260-89e1-0175f93e18c0",
+   "kind": "done",
+   "to_step": "76b5489f-eefa-5fe7-bef6-cfdffa1d6da1",
+   "to_funnel": null,
+   "delay_seconds": 3,
+   "typing_before": false
+  },
+  {
+   "id": "8780bddc-b337-5162-a948-509994f15d51",
+   "from_step": "76b5489f-eefa-5fe7-bef6-cfdffa1d6da1",
+   "kind": "email",
+   "to_step": "6431fba0-d22f-5251-a824-67e37eae521d",
+   "to_funnel": null,
+   "delay_seconds": 2,
+   "typing_before": false
+  },
+  {
+   "id": "b1dd12d5-b6a0-5df3-83a9-87b0ab42a3a0",
+   "from_step": "76b5489f-eefa-5fe7-bef6-cfdffa1d6da1",
+   "kind": "skip_if_email_known",
+   "to_step": "6431fba0-d22f-5251-a824-67e37eae521d",
+   "to_funnel": null,
+   "delay_seconds": 1,
+   "typing_before": false
+  },
+  {
+   "id": "dc83ea73-df2b-5723-aed1-291582e290c0",
+   "from_step": "6431fba0-d22f-5251-a824-67e37eae521d",
+   "kind": "done",
+   "to_step": "3e78e575-f769-5bf5-a63a-46584bca1638",
+   "to_funnel": null,
+   "delay_seconds": 3600,
+   "typing_before": false
+  },
+  {
+   "id": "4bc3c771-91d6-53fb-ae82-a9775b88a08b",
+   "from_step": "3e78e575-f769-5bf5-a63a-46584bca1638",
+   "kind": "done",
+   "to_step": "d615aca0-96ef-579d-99b8-5dabffd116a2",
+   "to_funnel": null,
+   "delay_seconds": 86400,
+   "typing_before": false
+  },
+  {
+   "id": "743a3015-b398-5e92-b424-7da59d2a6ec4",
+   "from_step": "3e78e575-f769-5bf5-a63a-46584bca1638",
+   "kind": "callback",
+   "to_step": "dccdb37c-8a0d-5282-bcd8-ae136ddb70d2",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  },
+  {
+   "id": "c4f6814b-e689-509b-a352-df638d58b493",
+   "from_step": "dccdb37c-8a0d-5282-bcd8-ae136ddb70d2",
+   "kind": "done",
+   "to_step": "3c1238c5-8c29-51f3-a85f-0152505ba39b",
+   "to_funnel": null,
+   "delay_seconds": 600,
+   "typing_before": false
+  },
+  {
+   "id": "5a058ee7-68c0-5d19-9784-d9067e7d332f",
+   "from_step": "3c1238c5-8c29-51f3-a85f-0152505ba39b",
+   "kind": "jump",
+   "to_step": "6b939e31-bf43-5162-9c5d-6c2b5a487009",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  },
+  {
+   "id": "653a6dc6-e130-5374-84a1-b0d2d4064fbf",
+   "from_step": "d615aca0-96ef-579d-99b8-5dabffd116a2",
+   "kind": "done",
+   "to_step": "6b939e31-bf43-5162-9c5d-6c2b5a487009",
+   "to_funnel": null,
+   "delay_seconds": 7200,
+   "typing_before": false
+  },
+  {
+   "id": "5cf2afa0-680f-5033-a306-e5655ca420bb",
+   "from_step": "6b939e31-bf43-5162-9c5d-6c2b5a487009",
+   "kind": "callback",
+   "to_step": "6555bf4c-a1d1-5ea7-8044-1ecf04a11948",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  }
+ ],
+ "unresolved": [],
+ "lanes": [],
+ "layout": {
+  "positions": {}
+ },
+ "notes": [],
+ "miro": null
+}

@@ -1,0 +1,595 @@
+{
+ "duration": {
+  "0": "сразу",
+  "1": "1 сек",
+  "45": "45 сек",
+  "60": "1 мин",
+  "90": "1 мин 30 сек",
+  "180": "3 мин",
+  "300": "5 мин",
+  "3600": "1 ч",
+  "3660": "1 ч 1 мин",
+  "7200": "2 ч",
+  "86400": "1 дн",
+  "90000": "1 дн 1 ч",
+  "176405": "2 дн 1 ч"
+ },
+ "minutes": {
+  "0": "0 мин",
+  "5": "5 мин",
+  "-5": "5 мин",
+  "30": "30 мин",
+  "-60": "1 ч",
+  "60": "1 ч",
+  "75": "1 ч 15 мин",
+  "-75": "1 ч 15 мин",
+  "120": "2 ч",
+  "150": "2 ч 30 мин",
+  "1440": "24 ч"
+ },
+ "step_type_label": {
+  "text": "💬 Текст",
+  "photo": "🖼 Сообщение с картинкой",
+  "video_note": "◉ Кружок",
+  "video": "🎬 Видео",
+  "animation": "🎞 GIF",
+  "rich": "📰 Статья",
+  "phone_request": "📞 Запрос телефона",
+  "email_request": "✉ Запрос почты",
+  "jump": "⤳ Переход (удалённый шаг)",
+  "call": "☎ Автозвонок",
+  "sms": "📱 SMS",
+  "air_pin": "📌 Закреп эфира"
+ },
+ "edge_kind_label": {
+  "done": "по времени",
+  "contact": "дал телефон",
+  "skip": "не дал (таймаут)",
+  "skip_if_phone_known": "телефон уже известен",
+  "email": "прислал почту",
+  "skip_if_email_known": "почта уже известна",
+  "callback": "нажал кнопку-действие",
+  "survey_next": "ответил – следующий вопрос",
+  "jump": "переход",
+  "also_fire": "параллельно",
+  "chain_to_funnel": "в другую воронку"
+ },
+ "funnels": {
+  "webinar__funnel.json": {
+   "steps": {
+    "3720648c-27d0-5973-a6bc-6c186daf2d8f": {
+     "key": "s_confirm",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "48550a4a-0495-5009-bdc2-4745891344d6": {
+     "key": "s_greet",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "b136a57b-45a5-52f5-b542-9bc618359d78": {
+     "key": "s_welcome",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "9ed66d0d-ac12-503e-a69c-b85f35f6ffd2": {
+     "key": "s_remind1",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": [
+      "🚪 не в канале"
+     ]
+    },
+    "f7c8f57e-2975-581b-8136-b12547e0ac74": {
+     "key": "s_remind2",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": [
+      "🚪 не в канале"
+     ]
+    },
+    "627a45d9-ab8e-5d2f-aeb1-7d5fe15ab732": {
+     "key": "s_vipintro",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": [
+      "💳 не оплатил ВИП"
+     ]
+    },
+    "495efed0-a230-5265-b618-a8c0d476b84c": {
+     "key": "s_offer",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": [
+      "💳 не оплатил ВИП"
+     ]
+    },
+    "dce2f145-5287-5d0e-9b63-903bb36f59c0": {
+     "key": "s_offer_nudge",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": [
+      "💳 не оплатил ВИП"
+     ]
+    },
+    "3dcb3d7b-3437-5a54-9261-e8f2df460986": {
+     "key": "s_survey",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "e23da3bd-dcbd-5df7-90ec-9a23136fed67": {
+     "key": "s_q1",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "e2b1cf81-2641-5ac4-9ffd-d72cf14f5deb": {
+     "key": "s_q2",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "b86b8cdd-2f2a-531b-b214-de0dc7a37a90": {
+     "key": "s_q3",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "24da1fc3-4d67-5103-8630-459effb1ebb7": {
+     "key": "s_thanks",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    },
+    "e1a5132b-54b3-5006-a95b-64c19bc79234": {
+     "key": "s_survey_nudge",
+     "schedule": null,
+     "by_branch": {
+      "M": null
+     },
+     "badges": []
+    }
+   },
+   "edges": {
+    "b0479f9d-db23-5ff5-b030-67fb6097344c": "дал телефон",
+    "c960ce34-b189-552e-a4d3-25af174e4989": "не дал за 10 сек",
+    "cab28f87-a398-5a7e-8431-07fce553a3f4": "телефон известен · через 2 сек",
+    "3f01b9b1-ec2b-56ba-b072-30b4f6c04435": "через 5 сек",
+    "e8c61e88-07e4-5cdc-b1f7-2b5a4a976ffa": "параллельно · через 3 мин",
+    "c43681b3-83f4-5fc3-831a-151e831086c5": "параллельно · через 2 ч 3 мин",
+    "7ddb34f2-5ba4-5992-abf8-9684c067c3e3": "параллельно · через 30 мин",
+    "fd4b085a-1033-5f1f-b5bd-229499552727": "через 5 сек",
+    "8a6abd65-e30d-5b24-aa3d-b554fb6c08e5": "через 4 ч",
+    "2ea79874-ffe3-5733-b6bc-72b55c88c005": "через 1 ч",
+    "2cbca90f-bbe9-5d81-a1a0-8728aa815b07": "нажал «📝 TAKE THE SURVEY»",
+    "ba008eee-df3d-57a1-889a-07f1df6f0d68": "ответил",
+    "dd59b194-f425-5122-8865-25334f20fe4b": "ответил",
+    "7b329bfd-cb63-5d8f-9b96-33b3afea180d": "ответил"
+   }
+  },
+  "leadmagnet__funnel.json": {
+   "steps": {
+    "ae782333-9441-5260-89e1-0175f93e18c0": {
+     "key": "m_hello",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "76b5489f-eefa-5fe7-bef6-cfdffa1d6da1": {
+     "key": "m_email",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "6431fba0-d22f-5251-a824-67e37eae521d": {
+     "key": "m_deliver",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "3e78e575-f769-5bf5-a63a-46584bca1638": {
+     "key": "m_choose",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "dccdb37c-8a0d-5282-bcd8-ae136ddb70d2": {
+     "key": "m_path_reports",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "3c1238c5-8c29-51f3-a85f-0152505ba39b": {
+     "key": "m_poll_jump",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "d615aca0-96ef-579d-99b8-5dabffd116a2": {
+     "key": "m_nudge",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "6b939e31-bf43-5162-9c5d-6c2b5a487009": {
+     "key": "m_final",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    },
+    "6555bf4c-a1d1-5ea7-8044-1ecf04a11948": {
+     "key": "m_course",
+     "schedule": null,
+     "by_branch": {},
+     "badges": []
+    }
+   },
+   "edges": {
+    "c7a6c1ab-2fc8-5b2b-bac7-c9fe1f4e8b74": "через 3 сек",
+    "8780bddc-b337-5162-a948-509994f15d51": "прислал почту · через 2 сек",
+    "b1dd12d5-b6a0-5df3-83a9-87b0ab42a3a0": "почта известна · через 1 сек",
+    "dc83ea73-df2b-5723-aed1-291582e290c0": "через 1 ч",
+    "4bc3c771-91d6-53fb-ae82-a9775b88a08b": "через 1 дн",
+    "743a3015-b398-5e92-b424-7da59d2a6ec4": "нажал «📊 I BUILD REPORTS»",
+    "c4f6814b-e689-509b-a352-df638d58b493": "через 10 мин",
+    "5a058ee7-68c0-5d19-9784-d9067e7d332f": "переход",
+    "653a6dc6-e130-5374-84a1-b0d2d4064fbf": "через 2 ч",
+    "5cf2afa0-680f-5033-a306-e5655ca420bb": "нажал «🎟 SEE THE FULL COURSE»"
+   }
+  },
+  "autowebinar__funnel_nextday.json": {
+   "steps": {
+    "72719ebe-9456-51ba-93f4-fbc05433c42f": {
+     "key": "w_welcome",
+     "schedule": null,
+     "by_branch": {
+      "TOMORROW": null
+     },
+     "badges": []
+    },
+    "a07ca4ae-35e7-558e-80bc-dc28a85cf41a": {
+     "key": "w_call_2h",
+     "schedule": "в 11:00, день эфира",
+     "by_branch": {
+      "TOMORROW": "в 11:00, день эфира"
+     },
+     "badges": []
+    },
+    "3c4490eb-50b3-5d5f-9d3a-06b4dbd90936": {
+     "key": "w_2h_circle",
+     "schedule": "в 11:01, день эфира",
+     "by_branch": {
+      "TOMORROW": "в 11:01, день эфира"
+     },
+     "badges": []
+    },
+    "5a595791-477f-5400-9f5b-e97a3ba01fe0": {
+     "key": "w_pre_1h",
+     "schedule": "за 1 ч до эфира",
+     "by_branch": {
+      "TOMORROW": "в 12:00 · за 1 ч до эфира"
+     },
+     "badges": []
+    },
+    "5bd4bc6e-cb0a-58d0-a358-5af38916a359": {
+     "key": "w_live",
+     "schedule": "в начале эфира",
+     "by_branch": {
+      "TOMORROW": "в 13:00 · в начале эфира"
+     },
+     "badges": []
+    },
+    "7048351c-84ef-5aea-a2d4-b1cd1d7bdb3c": {
+     "key": "w_repeat_promo",
+     "schedule": "через 3 ч 1 мин после начала эфира",
+     "by_branch": {
+      "TOMORROW": "в 16:01 · через 3 ч 1 мин после начала эфира"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "0ddd1e2e-c707-5b4d-b6bb-08e104e9fedd": {
+     "key": "w_sorry_circle",
+     "schedule": "через 3 ч 32 мин после начала эфира",
+     "by_branch": {
+      "TOMORROW": "в 16:32 · через 3 ч 32 мин после начала эфира"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "7eb9662c-4b9a-5484-a296-4d703b66fcb5": {
+     "key": "w_repeat_live",
+     "schedule": "в начале повтора",
+     "by_branch": {
+      "TOMORROW": "в 18:00 · в начале повтора"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "2ecf68a8-9599-5dce-95c9-b4437c19d6f0": {
+     "key": "w_sms_repeat",
+     "schedule": "в начале повтора",
+     "by_branch": {
+      "TOMORROW": "в 18:00 · в начале повтора"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "423c8f2e-297c-5841-8f99-6971c62f34ec": {
+     "key": "w_day2",
+     "schedule": "в 09:00, день 2",
+     "by_branch": {
+      "TOMORROW": "в 09:00, день 2"
+     },
+     "badges": []
+    }
+   },
+   "edges": {
+    "81e27a61-a85b-5bad-9bc3-81a946b895ba": "через 5 сек",
+    "193ccedc-61f9-528d-b548-660926696e9a": "параллельно · через сразу",
+    "4278735f-b51c-5247-8b51-aab7b164af1f": "параллельно · через сразу",
+    "66bde471-1566-5f1c-953b-75c8cf21acb2": "параллельно · через сразу",
+    "94fcceea-b161-598d-8d11-cfca5a698c46": "параллельно · через сразу",
+    "4b12a059-d076-510c-a615-00e5c76e87d6": "параллельно · через сразу",
+    "015bb901-5e80-5e9f-985a-e8fa49edde39": "параллельно · через сразу",
+    "5c409d87-d1bc-544c-a093-0709c38f1c59": "параллельно · через сразу",
+    "54f49fda-cc33-50c4-bc88-b1bd6fe4e63d": "сразу"
+   }
+  },
+  "autowebinar__funnel.json": {
+   "steps": {
+    "0440a471-4df8-5576-ab5e-cd11dc22cdc0": {
+     "key": "reg_hello",
+     "schedule": null,
+     "by_branch": {
+      "DAY": null,
+      "EVE": null
+     },
+     "badges": []
+    },
+    "e58b67ca-ca67-58e5-bd87-570920b05c23": {
+     "key": "reg_intro_a",
+     "schedule": null,
+     "by_branch": {
+      "DAY": null,
+      "EVE": null
+     },
+     "badges": [
+      "🕘 пришёл не в 11:00–12:00"
+     ]
+    },
+    "983d789e-9636-5402-a035-58d07318dfe2": {
+     "key": "reg_intro_b",
+     "schedule": null,
+     "by_branch": {
+      "DAY": null,
+      "EVE": null
+     },
+     "badges": [
+      "🕘 пришёл не в 11:00–12:00"
+     ]
+    },
+    "0f3bae75-57d6-5fac-9875-727c5b06a7fe": {
+     "key": "reg_channel",
+     "schedule": null,
+     "by_branch": {
+      "DAY": null,
+      "EVE": null
+     },
+     "badges": [
+      "🚪 не в канале"
+     ]
+    },
+    "ee687b93-1bfc-51a2-9fa9-c36af4ad73e9": {
+     "key": "d1_circle",
+     "schedule": "в 09:00, день эфира",
+     "by_branch": {
+      "DAY": "в 09:00, день эфира",
+      "EVE": "в 09:00, день эфира"
+     },
+     "badges": []
+    },
+    "1d29b110-8bb5-51f7-b0c1-a34c4ca1a5fb": {
+     "key": "d1_menu",
+     "schedule": "в 09:05, день эфира",
+     "by_branch": {
+      "DAY": "в 09:05, день эфира",
+      "EVE": "в 09:05, день эфира"
+     },
+     "badges": []
+    },
+    "d92c1739-9134-50eb-886a-be59fffebfa0": {
+     "key": "d1_prep",
+     "schedule": "за 2 ч 50 мин до эфира (DAY: 2 ч 50 мин / EVE: 2 ч 10 мин)",
+     "by_branch": {
+      "DAY": "в 10:10 · за 2 ч 50 мин до эфира",
+      "EVE": "в 15:50 · за 2 ч 10 мин до эфира"
+     },
+     "badges": []
+    },
+    "2e4ebe05-cac6-5470-a1b6-40b76ebf3f51": {
+     "key": "d1_remind",
+     "schedule": "за 1 ч до эфира",
+     "by_branch": {
+      "DAY": "в 12:00 · за 1 ч до эфира",
+      "EVE": "в 17:00 · за 1 ч до эфира"
+     },
+     "badges": []
+    },
+    "b8bccf31-97cb-58dd-a00c-e2d66390badb": {
+     "key": "d1_live",
+     "schedule": "в начале эфира",
+     "by_branch": {
+      "DAY": "в 13:00 · в начале эфира",
+      "EVE": "в 18:00 · в начале эфира"
+     },
+     "badges": []
+    },
+    "c0f28a63-298c-59c4-98ff-1dfe316b9f67": {
+     "key": "d1_replay",
+     "schedule": "через 2 ч после начала эфира",
+     "by_branch": {
+      "DAY": "в 15:00 · через 2 ч после начала эфира",
+      "EVE": "в 20:00 · через 2 ч после начала эфира"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "4ba02add-e81d-5568-a561-c7f946a40cfc": {
+     "key": "d1_offer",
+     "schedule": "через 4 ч после начала эфира",
+     "by_branch": {
+      "DAY": "в 17:00 · через 4 ч после начала эфира",
+      "EVE": "в 22:00 · через 4 ч после начала эфира"
+     },
+     "badges": [
+      "💳 не оплатил ВИП"
+     ]
+    },
+    "410db6cc-ae7d-5fe9-9f36-921545909d33": {
+     "key": "d2_morning",
+     "schedule": "в 09:00, день 2",
+     "by_branch": {
+      "DAY": "в 09:00, день 2",
+      "EVE": "в 09:00, день 2"
+     },
+     "badges": []
+    },
+    "54619fc7-663b-50f5-981a-5c5dffc7d5dc": {
+     "key": "d2_remind",
+     "schedule": "за 1 ч до эфира, день 2",
+     "by_branch": {
+      "DAY": "в 12:00 · за 1 ч до эфира, день 2",
+      "EVE": "в 17:00 · за 1 ч до эфира, день 2"
+     },
+     "badges": []
+    },
+    "0cd76b14-3b19-5ba5-b9d9-ca4a9d6b7d50": {
+     "key": "d2_live",
+     "schedule": "в начале эфира, день 2",
+     "by_branch": {
+      "DAY": "в 13:00 · в начале эфира, день 2",
+      "EVE": "в 18:00 · в начале эфира, день 2"
+     },
+     "badges": []
+    },
+    "3bae6468-030d-5d82-953a-f00c5777586f": {
+     "key": "d2_replay",
+     "schedule": "через 2 ч после начала эфира, день 2",
+     "by_branch": {
+      "DAY": "в 15:00 · через 2 ч после начала эфира, день 2",
+      "EVE": "в 20:00 · через 2 ч после начала эфира, день 2"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "f70eac9e-9b37-5f99-928f-a59212294bcb": {
+     "key": "d3_morning",
+     "schedule": "в 09:00, день 3",
+     "by_branch": {
+      "DAY": "в 09:00, день 3",
+      "EVE": "в 09:00, день 3"
+     },
+     "badges": []
+    },
+    "5d1f6869-1217-502e-94ff-ce148e6397b2": {
+     "key": "d3_remind",
+     "schedule": "за 1 ч до эфира, день 3",
+     "by_branch": {
+      "DAY": "в 12:00 · за 1 ч до эфира, день 3",
+      "EVE": "в 17:00 · за 1 ч до эфира, день 3"
+     },
+     "badges": []
+    },
+    "0c17894e-9143-521c-a33a-0c8277bc76cc": {
+     "key": "d3_live",
+     "schedule": "в начале эфира, день 3",
+     "by_branch": {
+      "DAY": "в 13:00 · в начале эфира, день 3",
+      "EVE": "в 18:00 · в начале эфира, день 3"
+     },
+     "badges": []
+    },
+    "264f3727-edab-5756-b590-062c30a0c768": {
+     "key": "d3_replay",
+     "schedule": "через 2 ч после начала эфира, день 3",
+     "by_branch": {
+      "DAY": "в 15:00 · через 2 ч после начала эфира, день 3",
+      "EVE": "в 20:00 · через 2 ч после начала эфира, день 3"
+     },
+     "badges": [
+      "🙈 не был на эфире · demo_room"
+     ]
+    },
+    "5037abf7-7c56-55eb-8323-1432148ab19f": {
+     "key": "d3_final_offer",
+     "schedule": "в 10:00 (DAY: день 4 / EVE: день 5)",
+     "by_branch": {
+      "DAY": "в 10:00, день 4",
+      "EVE": "в 10:00, день 5"
+     },
+     "badges": [
+      "💳 не оплатил ВИП"
+     ]
+    }
+   },
+   "edges": {
+    "e76d5055-12f4-5464-8067-032d5f7ba4a3": "через 1 мин",
+    "952c2a4c-bb70-5b20-b5e7-486551f0065e": "параллельно · через сразу",
+    "62ac259a-c500-56ad-90c4-bd0f43d81939": "параллельно · через сразу",
+    "061c42fe-a658-549c-9fd6-48807df914d8": "параллельно · через сразу",
+    "7591bb74-99e5-574c-b346-3466a6bfa3a8": "параллельно · через сразу",
+    "ea7cefee-494d-55d0-9ede-7faeab359794": "параллельно · через сразу",
+    "f37da840-ad8b-511d-ac25-7d75d1de4f36": "параллельно · через сразу",
+    "c6357ae4-d56b-51f4-8121-eb0f777fc9d4": "параллельно · через сразу",
+    "56e93dba-6646-58db-9120-730d4672db1e": "параллельно · через сразу",
+    "a24b2ae8-7e19-53e8-8fd3-fac33ea32fa0": "параллельно · через сразу",
+    "2c4504c1-bc0a-54b7-b7f6-88f994dc03b9": "параллельно · через сразу",
+    "e095bb81-ff18-59c2-b29a-b4538e432041": "параллельно · через сразу",
+    "08469e89-6119-5e5e-85ea-ec14cb58ce54": "параллельно · через сразу",
+    "80279269-a60e-5640-8077-9104c8ad080e": "параллельно · через сразу",
+    "6c32b1c6-88c4-5aa3-92d4-331e632b5fe8": "параллельно · через сразу",
+    "e92d04f2-a677-5dd0-8ebe-cf6af5446149": "параллельно · через сразу",
+    "d36568bd-ed09-503c-88c1-b1fa20fb7741": "через 30 сек",
+    "1cc9012e-dd09-5a95-aafb-f4ba3d00396f": "через 1 мин",
+    "5c9f563b-ae3b-54f9-9a7c-2e47138acefc": "через 2 мин"
+   }
+  }
+ }
+}

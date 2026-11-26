@@ -1,0 +1,86 @@
+# Funnel Studio with its own engine: Postgres + engine (polls the bots, runs the queue) + Studio server.
+#
+#   cp deploy/.env.example deploy/.env      # fill in the values
+#   docker compose -f deploy/compose.yaml --env-file deploy/.env up -d --build
+#
+# The Studio is published on 127.0.0.1:8790 only; put a reverse proxy in front of it if you need
+# it reachable from outside.
+name: funnel-studio
+
+x-app: &app
+  image: funnel-studio:latest
+  restart: unless-stopped
+  env_file: .env
+  environment:
+    STUDIO_RUNTIME_DSN: postgresql://fs:${POSTGRES_PASSWORD}@db:5432/fs_runtime
+    STUDIO_DATA: /data
+    # the bundled demo bot repository; mount your own and point this at it to use real launches
+    BOT_REPO_PATH: /app/demo/botrepo
+    TZ: Europe/Moscow
+  volumes:
+    # Studio data: funnels, studio.db (drafts and versions), media, thumbnails
+    - ./data:/data
+    # optional: your own bot repository, read-only
+    # - ./bot-repo:/bot-repo:ro
+  depends_on:
+    db:
+      condition: service_healthy
+  logging:
+    driver: json-file
+    options: {max-size: "10m", max-file: "5"}
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fs
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: fs_runtime
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fs -d fs_runtime"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+    shm_size: 128m
+
+  # The engine: polls Telegram / MAX and executes the job queue.
+  # One bot token = one poller, so this container must be the only process holding the token.
+  runtime:
+    <<: *app
+    build:
+      context: ..
+    command: ["python", "-m", "runtime", "run"]
+    ports:
+      - "127.0.0.1:8781:8781"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,json;d=json.load(urllib.request.urlopen('http://127.0.0.1:8781/health',timeout=5));assert d['ok']"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+    # SIGTERM -> graceful stop (job leases are released, polling is detached)
+    stop_grace_period: 30s
+    mem_limit: 512m
+
+  # The Studio server and canvas
+  studio:
+    <<: *app
+    command: ["python", "-m", "studio.server", "--host", "0.0.0.0", "--port", "8765"]
+    pull_policy: never
+    ports:
+      - "127.0.0.1:8790:8765"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8765/api/health',timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 20s
+      retries: 3
+    mem_limit: 768m
+
+volumes:
+  # engine database: queue, people, versions
+  pg-data:

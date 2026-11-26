@@ -1,0 +1,21 @@
+{
+ "schema_version": 1,
+ "id": "x",
+ "title": "",
+ "source": null,
+ "branch_router": null,
+ "entry_variants": [],
+ "webinar_room": null,
+ "air_email_profile": "",
+ "max_video_note_caption": true,
+ "resend_entry_on_repeat": false,
+ "steps": [],
+ "edges": [],
+ "unresolved": [],
+ "lanes": [],
+ "layout": {
+  "positions": {}
+ },
+ "notes": [],
+ "miro": null
+}

@@ -1,0 +1,1800 @@
+{
+ "schema_version": 1,
+ "id": "webinar_registration",
+ "title": "",
+ "source": {
+  "launch": "webinar",
+  "path": "launches/webinar/funnel.yaml",
+  "extends": null,
+  "own_keys": []
+ },
+ "branch_router": {
+  "type": "time_of_day_msk",
+  "branches": [
+   {
+    "id": "M",
+    "entry_step": "3720648c-27d0-5973-a6bc-6c186daf2d8f",
+    "webinar_time": "11:00",
+    "windows": [
+     {
+      "from": "00:00",
+      "to": "23:59",
+      "day": "fixed",
+      "date": "2026-09-17"
+     }
+    ],
+    "repeat_offset_minutes": 0
+   }
+  ]
+ },
+ "entry_variants": [],
+ "webinar_room": null,
+ "air_email_profile": "",
+ "max_video_note_caption": true,
+ "resend_entry_on_repeat": false,
+ "steps": [
+  {
+   "id": "3720648c-27d0-5973-a6bc-6c186daf2d8f",
+   "key": "s_confirm",
+   "type": "phone_request",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, please confirm you are a real person</b>\n\nTap the button below – this is how we know a human is on the other side, and we can send you access links, gifts and reminders.\n\nTap \"Share contact\" 👇\n",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/contact.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 SHARE CONTACT",
+    "skip_if_known": true,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": true,
+    "manual_phone_max_text": "<b>{Имя}, please confirm you are a real person</b>\n\nSend your phone number in one message so we can send you access links, gifts and reminders.\n",
+    "manual_phone_retry_text": "That does not look like a number 🙈 Send it in one message, e.g.\n+1 202 555 0123 – and I will unlock the private channel.\n"
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "48550a4a-0495-5009-bdc2-4745891344d6",
+   "key": "s_greet",
+   "type": "video_note",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": "./static/circle1.mp4",
+    "video_fallback": "./static/circle1.mp4",
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "b136a57b-45a5-52f5-b542-9bc618359d78",
+   "key": "s_welcome",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, hi! You are registered for the \"Spreadsheet Automation Workshop\"</b>\n\n🗓 <tg-time unix=\"{webinar.unix}\">17 September</tg-time>\n⏰ 11:00 MSK\n\n<b>What we will build together:</b>\n• a report that refreshes itself every morning without a single manual copy-paste;\n• a data-cleaning macro that fixes dates, duplicates and broken phone numbers in one click;\n• an approval workflow driven only by cell comments and a status column;\n• a dashboard that stays readable when the data grows from 200 to 20 000 rows;\n• a short checklist for deciding what is worth automating and what is not.\n• a quick way to find the one slow formula that makes the whole workbook crawl;\n• a naming and colour convention that lets a colleague open your file and understand it in a minute;\n• a safe way to share a workbook so that nobody overwrites the formulas by accident.\n\n<b>Gifts waiting for you in the private channel:</b>\n🎁 <b>\"Formula cheat-sheet\"</b>\nOne printable page with the 25 formulas that cover 90% of everyday spreadsheet work.\n🎁 <b>\"Template pack\"</b>\nFive ready-made workbooks: budget, content plan, lead tracker, inventory and weekly report, each with sample data and notes on how to adapt it.\n",
+     "buttons": [
+      {
+       "text": "🎁 GET THE GIFTS",
+       "url": "{channel.link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "OPEN THE PRIVATE CHANNEL",
+       "url": "{channel.link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/welcome.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "9ed66d0d-ac12-503e-a69c-b85f35f6ffd2",
+   "key": "s_remind1",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>Still not in the private channel?</b> 👀\n\nEverything interesting happens there 👉 {channel.link}\n\nBoth gifts and the workshop link are waiting for you – the live session starts <tg-time unix=\"{webinar.unix}\">17 September</tg-time>.\n",
+     "buttons": [
+      {
+       "text": "OPEN THE PRIVATE CHANNEL",
+       "url": "{channel.link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/reminder.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": "not_joined",
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "f7c8f57e-2975-581b-8136-b12547e0ac74",
+   "key": "s_remind2",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, while you read this in the public feed, the private channel is already preparing for the workshop</b> 📊\n\nTwo gifts are inside:\n– the one-page formula cheat-sheet\n– five ready-made workbook templates\n\n👉 {channel.link}\n",
+     "buttons": [
+      {
+       "text": "OPEN THE PRIVATE CHANNEL",
+       "url": "{channel.link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/reminder2.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": "not_joined",
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "627a45d9-ab8e-5d2f-aeb1-7d5fe15ab732",
+   "key": "s_vipintro",
+   "type": "video_note",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "",
+     "buttons": [],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": "./static/circle2.mp4",
+    "video_fallback": "./static/circle2.mp4",
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": true,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "495efed0-a230-5265-b618-a8c0d476b84c",
+   "key": "s_offer",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "🤫 <b>Psst, a ticket with extras is available</b>\n\nIf you want to:\n• keep the recording and rewatch it whenever it suits you\n• get the bonus templates that are not shared publicly\n• have your own spreadsheet reviewed by a mentor\n\n👉 <a href=\"{vip_link}\">Get the ticket for $9</a>\n\n<b>WHAT IS INCLUDED:</b>\n1️⃣ Recording of the workshop\n2️⃣ A 1:1 review of your own workbook with concrete advice\n3️⃣ A personal certificate with your name\n4️⃣ 10% off the full course\n\n👇 Get the ticket and all the bonuses\n",
+     "buttons": [
+      {
+       "text": "🎟 GET THE TICKET · $9",
+       "url": "{vip_link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/vip.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": true,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "dce2f145-5287-5d0e-9b63-903bb36f59c0",
+   "key": "s_offer_nudge",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, you have not picked up your ticket yet</b> 👀\n\n$9 – and you get the recording, a 1:1 workbook review and a personal certificate.\n\nAccess closes soon :)\n\n👇 Pick it up now\n",
+     "buttons": [
+      {
+       "text": "🎟 GET THE TICKET",
+       "url": "{vip_link}",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/vipnudge.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": true,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "3dcb3d7b-3437-5a54-9261-e8f2df460986",
+   "key": "s_survey",
+   "type": "photo",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>I WANT TO GIVE YOU A PERSONAL GIFT</b>\n\nA good template saves hours, but only if it fits the way you work.\n\nSo we put together a starter set of templates you can plug into your own workbooks.\n\n⏱️ The set is available for 2 hours only!\n\n⬇️ To get it, answer 3 short questions (under 2 minutes) ⬇️\n",
+     "buttons": [],
+     "claim_button_text": "📝 TAKE THE SURVEY"
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": "./static/survey.jpg",
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "e23da3bd-dcbd-5df7-90ec-9a23136fed67",
+   "key": "s_q1",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, what do you do?</b>\n",
+     "buttons": [
+      {
+       "text": "Employee",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Business owner",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Retired",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Freelancer / consultant",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Not working right now",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": "q1",
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": true
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "e2b1cf81-2641-5ac4-9ffd-d72cf14f5deb",
+   "key": "s_q2",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>Which results matter most to you?</b>\n<i>(pick several, then \"Done, next\")</i>\n",
+     "buttons": [
+      {
+       "text": "Build reports faster",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Free up my time",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Find new clients",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Raise my income",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Build a team workflow",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Replace manual routines",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Work remotely",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": "q2",
+    "multi": true,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Done, next",
+    "edit": true
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "b86b8cdd-2f2a-531b-b214-de0dc7a37a90",
+   "key": "s_q3",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>How would you rate your current spreadsheet skills?</b>\n",
+     "buttons": [
+      {
+       "text": "Beginner",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Tried it a couple of times",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Confident user",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      },
+      {
+       "text": "Pro, I use it daily",
+       "url": null,
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": "q3",
+    "multi": false,
+    "final": true,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": true
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "24da1fc3-4d67-5103-8630-459effb1ebb7",
+   "key": "s_thanks",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>{Имя}, thank you for answering!</b> It really helps.\n\nAs promised, here is your starter set of templates and tools.\n\n⬇️⬇️⬇️\n",
+     "buttons": [
+      {
+       "text": "🎁 GET THE STARTER SET",
+       "url": "https://example.com/starter-set",
+       "callback_data": null,
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": null,
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  },
+  {
+   "id": "e1a5132b-54b3-5006-a95b-64c19bc79234",
+   "key": "s_survey_nudge",
+   "type": "text",
+   "role": null,
+   "role_day": null,
+   "title": "",
+   "content": {
+    "tg": {
+     "text": "<b>Almost there</b>\n\nAnswer the last questions and get your starter set of templates.\n\n⬇️⬇️⬇️\n",
+     "buttons": [
+      {
+       "text": "📝 TAKE THE SURVEY",
+       "url": null,
+       "callback_data": "gm:svq",
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "max": {
+     "text": null,
+     "buttons": [
+      {
+       "text": "📝 TAKE THE SURVEY",
+       "url": null,
+       "callback_data": "gm:webinar:svq",
+       "style": null,
+       "web_app": false
+      }
+     ],
+     "claim_button_text": null
+    },
+    "variants": []
+   },
+   "media": {
+    "image": null,
+    "images": null,
+    "image_lm": false,
+    "video_note": null,
+    "video_fallback": null,
+    "video": null,
+    "animation": null,
+    "rich": null,
+    "media_optional": false
+   },
+   "schedule": {
+    "after_start_seconds": null,
+    "absolute_time_msk": null,
+    "day_offset": 0,
+    "day_offset_by_branch": null,
+    "webinar_offset_minutes": null,
+    "webinar_offset_by_branch": null,
+    "anchor": "webinar",
+    "skip_if_past": true,
+    "dnd_exempt": false,
+    "min_delay_seconds": 0
+   },
+   "conditions": {
+    "attendance": null,
+    "bizon_room": null,
+    "bizon_room_max": "",
+    "gate_window_hours": 4,
+    "not_paid": false,
+    "paid": false,
+    "not_course_paid": false,
+    "course_paid": false,
+    "channel": null,
+    "survey_done": false,
+    "has_lm": false,
+    "no_link_click": "",
+    "link_click": "",
+    "no_manager_dm": false,
+    "registered_windows": [],
+    "max_subscription_gate": false
+   },
+   "contact": {
+    "contact_button": "📱 Оставить номер телефона",
+    "skip_if_known": false,
+    "always_send_text": false,
+    "text_if_known": "",
+    "manual_phone_max": false,
+    "manual_phone_max_text": "",
+    "manual_phone_retry_text": ""
+   },
+   "email": {
+    "skip_if_known": false,
+    "text_if_known": "",
+    "retry_text": ""
+   },
+   "survey": {
+    "qid": null,
+    "multi": false,
+    "final": false,
+    "free": false,
+    "done_button": "✅ Готово, продолжить",
+    "edit": false
+   },
+   "call": {
+    "audio_url": null,
+    "audio_id": null,
+    "text": null
+   },
+   "sms": {
+    "text": null
+   },
+   "claim": {
+    "ack_text": null,
+    "keeps_chain": false
+   },
+   "pin": {
+    "pin": false,
+    "air_pin": false
+   },
+   "diploma_template": "",
+   "miro": null,
+   "advanced": {}
+  }
+ ],
+ "edges": [
+  {
+   "id": "b0479f9d-db23-5ff5-b030-67fb6097344c",
+   "from_step": "3720648c-27d0-5973-a6bc-6c186daf2d8f",
+   "kind": "contact",
+   "to_step": "48550a4a-0495-5009-bdc2-4745891344d6",
+   "to_funnel": null,
+   "delay_seconds": 0,
+   "typing_before": false
+  },
+  {
+   "id": "c960ce34-b189-552e-a4d3-25af174e4989",
+   "from_step": "3720648c-27d0-5973-a6bc-6c186daf2d8f",
+   "kind": "skip",
+   "to_step": "48550a4a-0495-5009-bdc2-4745891344d6",
+   "to_funnel": null,
+   "delay_seconds": 10,
+   "typing_before": false
+  },
+  {
+   "id": "cab28f87-a398-5a7e-8431-07fce553a3f4",
+   "from_step": "3720648c-27d0-5973-a6bc-6c186daf2d8f",
+   "kind": "skip_if_phone_known",
+   "to_step": "48550a4a-0495-5009-bdc2-4745891344d6",
+   "to_funnel": null,
+   "delay_seconds": 2,
+   "typing_before": false
+  },
+  {
+   "id": "3f01b9b1-ec2b-56ba-b072-30b4f6c04435",
+   "from_step": "48550a4a-0495-5009-bdc2-4745891344d6",
+   "kind": "done",
+   "to_step": "b136a57b-45a5-52f5-b542-9bc618359d78",
+   "to_funnel": null,
+   "delay_seconds": 5,
+   "typing_before": false
+  },
+  {
+   "id": "e8c61e88-07e4-5cdc-b1f7-2b5a4a976ffa",
+   "from_step": "b136a57b-45a5-52f5-b542-9bc618359d78",
+   "kind": "also_fire",
+   "to_step": "9ed66d0d-ac12-503e-a69c-b85f35f6ffd2",
+   "to_funnel": null,
+   "delay_seconds": 180,
+   "typing_before": false
+  },
+  {
+   "id": "c43681b3-83f4-5fc3-831a-151e831086c5",
+   "from_step": "b136a57b-45a5-52f5-b542-9bc618359d78",
+   "kind": "also_fire",
+   "to_step": "f7c8f57e-2975-581b-8136-b12547e0ac74",
+   "to_funnel": null,
+   "delay_seconds": 7380,
+   "typing_before": false
+  },
+  {
+   "id": "7ddb34f2-5ba4-5992-abf8-9684c067c3e3",
+   "from_step": "b136a57b-45a5-52f5-b542-9bc618359d78",
+   "kind": "also_fire",
+   "to_step": "627a45d9-ab8e-5d2f-aeb1-7d5fe15ab732",
+   "to_funnel": null,
+   "delay_seconds": 1800,
+   "typing_before": false
+  },
+  {
+   "id": "fd4b085a-1033-5f1f-b5bd-229499552727",
+   "from_step": "627a45d9-ab8e-5d2f-aeb1-7d5fe15ab732",
+   "kind": "done",
+   "to_step": "495efed0-a230-5265-b618-a8c0d476b84c",
+   "to_funnel": null,
+   "delay_seconds": 5,
+   "typing_before": false
+  },
+  {
+   "id": "8a6abd65-e30d-5b24-aa3d-b554fb6c08e5",
+   "from_step": "495efed0-a230-5265-b618-a8c0d476b84c",
+   "kind": "done",
+   "to_step": "dce2f145-5287-5d0e-9b63-903bb36f59c0",
+   "to_funnel": null,
+   "delay_seconds": 14400,
+   "typing_before": false
+  },
+  {
+   "id": "2ea79874-ffe3-5733-b6bc-72b55c88c005",
+   "from_step": "dce2f145-5287-5d0e-9b63-903bb36f59c0",
+   "kind": "done",
+   "to_step": "3dcb3d7b-3437-5a54-9261-e8f2df460986",
+   "to_funnel": null,
+   "delay_seconds": 3600,
+   "typing_before": false
+  },
+  {
+   "id": "2cbca90f-bbe9-5d81-a1a0-8728aa815b07",
+   "from_step": "3dcb3d7b-3437-5a54-9261-e8f2df460986",
+   "kind": "callback",
+   "to_step": "e23da3bd-dcbd-5df7-90ec-9a23136fed67",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  },
+  {
+   "id": "ba008eee-df3d-57a1-889a-07f1df6f0d68",
+   "from_step": "e23da3bd-dcbd-5df7-90ec-9a23136fed67",
+   "kind": "survey_next",
+   "to_step": "e2b1cf81-2641-5ac4-9ffd-d72cf14f5deb",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  },
+  {
+   "id": "dd59b194-f425-5122-8865-25334f20fe4b",
+   "from_step": "e2b1cf81-2641-5ac4-9ffd-d72cf14f5deb",
+   "kind": "survey_next",
+   "to_step": "b86b8cdd-2f2a-531b-b214-de0dc7a37a90",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  },
+  {
+   "id": "7b329bfd-cb63-5d8f-9b96-33b3afea180d",
+   "from_step": "b86b8cdd-2f2a-531b-b214-de0dc7a37a90",
+   "kind": "survey_next",
+   "to_step": "24da1fc3-4d67-5103-8630-459effb1ebb7",
+   "to_funnel": null,
+   "delay_seconds": null,
+   "typing_before": false
+  }
+ ],
+ "unresolved": [],
+ "lanes": [],
+ "layout": {
+  "positions": {}
+ },
+ "notes": [],
+ "miro": null
+}

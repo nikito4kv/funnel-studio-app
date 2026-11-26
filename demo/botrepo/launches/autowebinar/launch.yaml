@@ -1,0 +1,30 @@
+slug: autowebinar
+display_name: "Evergreen 3-day auto-webinar"
+short_name: "Auto 3d"
+
+bot:
+  tg:
+    enabled: true
+    token_env: AUTOWEBINAR_BOT_TOKEN
+    username: northwind_auto_bot
+  max:
+    enabled: true
+    payload_prefix: auto_
+    shared_token_env: MAX_BOT_TOKEN
+
+funnel: ./funnel.yaml
+
+channel:
+  link: "https://t.me/+DemoAutoInvite"
+  title: "Northwind Academy"
+  chat_id: 0
+  max_chat_id: 0
+  max_gate_fallback: skip
+
+webinar:
+  datetime_msk: ""
+  gift_url: "https://example.com/auto-ticket"
+
+features:
+  dnd:
+    enabled: false

@@ -1,0 +1,38 @@
+{
+  "name": "funnel-studio-web",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "node scripts/e2e.mjs",
+    "e2e:versions": "node scripts/e2e_versions.mjs",
+    "e2e:sim": "node scripts/e2e_sim.mjs",
+    "e2e:publish": "node scripts/e2e_publish.mjs",
+    "e2e:miro": "node scripts/e2e_miro.mjs",
+    "e2e:bots": "node scripts/e2e_bots.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/onest": "^5.3.1",
+    "@xyflow/react": "^12.11.6",
+    "elkjs": "^0.12.0",
+    "lucide-react": "^1.48.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "playwright": "^1.63.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}

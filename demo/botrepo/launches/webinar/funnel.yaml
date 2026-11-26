@@ -1,0 +1,287 @@
+id: webinar_registration
+
+# Fixed date: every registrant joins the same live webinar on 17.09.2026 at 11:00 MSK.
+branch_router:
+  type: time_of_day_msk
+  branches:
+    - id: M
+      entry_step: s_confirm
+      webinar_time: "11:00"
+      windows:
+        - {from: "00:00", to: "23:59", day: fixed, date: "2026-09-17"}
+
+# ── Registration funnel "Spreadsheet Automation Workshop" (fictional) ────────
+#
+#   /start
+#     → s_confirm   "confirm you are a real person" + contact button
+#         ├ shared the contact → s_greet (now)
+#         ├ phone already known → s_greet (step skipped)
+#         └ silent for 10 s     → s_greet (we do not ask twice)
+#     → s_greet     host's video-circle greeting                      → +5 s
+#     → s_welcome   welcome + programme + gifts
+#         ├ +3 min    → s_remind1   "not in the channel yet?"  (gated: not_joined)
+#         ├ +2 h 3 m  → s_remind2   "while you read this…"     (gated: not_joined)
+#         └ +30 min   → s_vipintro  video circle about the ticket (gated: not_paid)
+#                          → +5 s → s_offer  ticket offer            (gated: not_paid)
+#                          → +4 h → s_offer_nudge  "you have not picked up the ticket" (gated: not_paid)
+#                                     → +1 h → s_survey → 3-question survey → s_thanks
+#
+# Every delay counts from the previous message.
+
+steps:
+
+  - key: s_confirm
+    type: phone_request
+    image: ./static/contact.jpg
+    parse_mode: HTML
+    contact_button: "📱 SHARE CONTACT"
+    skip_if_user_phone_known: true
+    manual_phone_max: true
+    manual_phone_retry_text: |
+      That does not look like a number 🙈 Send it in one message, e.g.
+      +1 202 555 0123 – and I will unlock the private channel.
+    on_contact: s_greet
+    on_skip: s_greet
+    on_skip_after_seconds: 10
+    on_skip_if_phone_known: s_greet
+    on_skip_if_phone_known_after_seconds: 2
+    text: |
+      <b>{Имя}, please confirm you are a real person</b>
+
+      Tap the button below – this is how we know a human is on the other side, and we can send you access links, gifts and reminders.
+
+      Tap "Share contact" 👇
+    manual_phone_max_text: |
+      <b>{Имя}, please confirm you are a real person</b>
+
+      Send your phone number in one message so we can send you access links, gifts and reminders.
+
+  # No `text` on purpose: the script is what the host says in the circle.
+  - key: s_greet
+    type: video_note
+    video_note: ./static/circle1.mp4
+    video_fallback: ./static/circle1.mp4
+    on_done: s_welcome
+    on_done_after_seconds: 5
+
+  - key: s_welcome
+    type: photo
+    image: ./static/welcome.jpg
+    parse_mode: HTML
+    buttons:
+      - text: "🎁 GET THE GIFTS"
+        url: "{channel.link}"
+      - text: "OPEN THE PRIVATE CHANNEL"
+        url: "{channel.link}"
+    also_fire:
+      s_remind1: 180
+      s_remind2: 7380
+      s_vipintro: 1800
+    text: |
+      <b>{Имя}, hi! You are registered for the "Spreadsheet Automation Workshop"</b>
+
+      🗓 <tg-time unix="{webinar.unix}">17 September</tg-time>
+      ⏰ 11:00 MSK
+
+      <b>What we will build together:</b>
+      • a report that refreshes itself every morning without a single manual copy-paste;
+      • a data-cleaning macro that fixes dates, duplicates and broken phone numbers in one click;
+      • an approval workflow driven only by cell comments and a status column;
+      • a dashboard that stays readable when the data grows from 200 to 20 000 rows;
+      • a short checklist for deciding what is worth automating and what is not.
+      • a quick way to find the one slow formula that makes the whole workbook crawl;
+      • a naming and colour convention that lets a colleague open your file and understand it in a minute;
+      • a safe way to share a workbook so that nobody overwrites the formulas by accident.
+
+      <b>Gifts waiting for you in the private channel:</b>
+      🎁 <b>"Formula cheat-sheet"</b>
+      One printable page with the 25 formulas that cover 90% of everyday spreadsheet work.
+      🎁 <b>"Template pack"</b>
+      Five ready-made workbooks: budget, content plan, lead tracker, inventory and weekly report, each with sample data and notes on how to adapt it.
+
+  - key: s_remind1
+    type: photo
+    image: ./static/reminder.jpg
+    parse_mode: HTML
+    gated_by_channel_joined: not_joined
+    buttons:
+      - text: "OPEN THE PRIVATE CHANNEL"
+        url: "{channel.link}"
+    text: |
+      <b>Still not in the private channel?</b> 👀
+
+      Everything interesting happens there 👉 {channel.link}
+
+      Both gifts and the workshop link are waiting for you – the live session starts <tg-time unix="{webinar.unix}">17 September</tg-time>.
+
+  - key: s_remind2
+    type: photo
+    image: ./static/reminder2.jpg
+    parse_mode: HTML
+    gated_by_channel_joined: not_joined
+    buttons:
+      - text: "OPEN THE PRIVATE CHANNEL"
+        url: "{channel.link}"
+    text: |
+      <b>{Имя}, while you read this in the public feed, the private channel is already preparing for the workshop</b> 📊
+
+      Two gifts are inside:
+      – the one-page formula cheat-sheet
+      – five ready-made workbook templates
+
+      👉 {channel.link}
+
+  # No text and no buttons on a circle: the offer arrives as the next step.
+  # on_done also fires when the gate skips the step, so the chain reaches everyone.
+  - key: s_vipintro
+    type: video_note
+    video_note: ./static/circle2.mp4
+    video_fallback: ./static/circle2.mp4
+    gated_by_not_paid: true
+    on_done: s_offer
+    on_done_after_seconds: 5
+
+  - key: s_offer
+    type: photo
+    image: ./static/vip.jpg
+    parse_mode: HTML
+    gated_by_not_paid: true
+    on_done: s_offer_nudge
+    on_done_after_seconds: 14400
+    buttons:
+      - text: "🎟 GET THE TICKET · $9"
+        url: "{vip_link}"
+    text: |
+      🤫 <b>Psst, a ticket with extras is available</b>
+
+      If you want to:
+      • keep the recording and rewatch it whenever it suits you
+      • get the bonus templates that are not shared publicly
+      • have your own spreadsheet reviewed by a mentor
+
+      👉 <a href="{vip_link}">Get the ticket for $9</a>
+
+      <b>WHAT IS INCLUDED:</b>
+      1️⃣ Recording of the workshop
+      2️⃣ A 1:1 review of your own workbook with concrete advice
+      3️⃣ A personal certificate with your name
+      4️⃣ 10% off the full course
+
+      👇 Get the ticket and all the bonuses
+
+  - key: s_offer_nudge
+    type: photo
+    image: ./static/vipnudge.jpg
+    parse_mode: HTML
+    gated_by_not_paid: true
+    on_done: s_survey
+    on_done_after_seconds: 3600
+    buttons:
+      - text: "🎟 GET THE TICKET"
+        url: "{vip_link}"
+    text: |
+      <b>{Имя}, you have not picked up your ticket yet</b> 👀
+
+      $9 – and you get the recording, a 1:1 workbook review and a personal certificate.
+
+      Access closes soon :)
+
+      👇 Pick it up now
+
+  - key: s_survey
+    type: photo
+    image: ./static/survey.jpg
+    parse_mode: HTML
+    claim_button_text: "📝 TAKE THE SURVEY"
+    on_callback: s_q1
+    text: |
+      <b>I WANT TO GIVE YOU A PERSONAL GIFT</b>
+
+      A good template saves hours, but only if it fits the way you work.
+
+      So we put together a starter set of templates you can plug into your own workbooks.
+
+      ⏱️ The set is available for 2 hours only!
+
+      ⬇️ To get it, answer 3 short questions (under 2 minutes) ⬇️
+
+  # Survey, edit-in-place: an answer edits the same message into the next question.
+  - key: s_q1
+    type: text
+    parse_mode: HTML
+    survey_qid: q1
+    survey_edit: true
+    survey_next: s_q2
+    buttons:
+      - text: "Employee"
+      - text: "Business owner"
+      - text: "Retired"
+      - text: "Freelancer / consultant"
+      - text: "Not working right now"
+    text: |
+      <b>{Имя}, what do you do?</b>
+
+  - key: s_q2
+    type: text
+    parse_mode: HTML
+    survey_qid: q2
+    survey_edit: true
+    survey_multi: true
+    survey_next: s_q3
+    survey_done_button: "✅ Done, next"
+    buttons:
+      - text: "Build reports faster"
+      - text: "Free up my time"
+      - text: "Find new clients"
+      - text: "Raise my income"
+      - text: "Build a team workflow"
+      - text: "Replace manual routines"
+      - text: "Work remotely"
+    text: |
+      <b>Which results matter most to you?</b>
+      <i>(pick several, then "Done, next")</i>
+
+  - key: s_q3
+    type: text
+    parse_mode: HTML
+    survey_qid: q3
+    survey_edit: true
+    survey_final: true
+    survey_next: s_thanks
+    buttons:
+      - text: "Beginner"
+      - text: "Tried it a couple of times"
+      - text: "Confident user"
+      - text: "Pro, I use it daily"
+    text: |
+      <b>How would you rate your current spreadsheet skills?</b>
+
+  - key: s_thanks
+    type: text
+    parse_mode: HTML
+    buttons:
+      - text: "🎁 GET THE STARTER SET"
+        url: "https://example.com/starter-set"
+    text: |
+      <b>{Имя}, thank you for answering!</b> It really helps.
+
+      As promised, here is your starter set of templates and tools.
+
+      ⬇️⬇️⬇️
+
+  # Sent by a game module in the real engine, not by the funnel; kept here so the text is editable.
+  - key: s_survey_nudge
+    type: text
+    parse_mode: HTML
+    buttons:
+      - text: "📝 TAKE THE SURVEY"
+        callback_data: "gm:svq"
+    buttons_max:
+      - text: "📝 TAKE THE SURVEY"
+        callback_data: "gm:webinar:svq"
+    text: |
+      <b>Almost there</b>
+
+      Answer the last questions and get your starter set of templates.
+
+      ⬇️⬇️⬇️

@@ -1,0 +1,27 @@
+/* Импорт из Miro: диалог, блок в панели шага. Только токены из design/tokens.css. */
+
+.miro-modal { width: min(760px, 94vw); display: flex; flex-direction: column; gap: var(--sp-3); }
+.miro-modal .row .field { min-width: 0; }
+.miro-rules { font-size: var(--fs-sm); color: var(--text-2); background: var(--surface-2); border-radius: var(--r-md); padding: var(--sp-2) var(--sp-3); }
+.miro-rules summary { display: flex; align-items: center; gap: var(--sp-2); cursor: pointer; font-weight: var(--fw-semibold); color: var(--text); }
+.miro-rules ol { margin: var(--sp-2) 0 0; padding-left: var(--sp-5); display: flex; flex-direction: column; gap: var(--sp-1); }
+
+.miro-progress { display: flex; flex-direction: column; gap: var(--sp-2); font-size: var(--fs-sm); color: var(--text-2); }
+.miro-progress .bar { height: 6px; background: var(--surface-active); border-radius: var(--r-full); overflow: hidden; }
+.miro-progress .bar-fill { height: 100%; background: var(--accent); border-radius: var(--r-full); transition: width var(--dur) ease; }
+
+.miro-result { display: flex; flex-direction: column; gap: var(--sp-2); max-height: 60vh; overflow: auto; }
+.miro-report { margin: 0; padding-left: var(--sp-5); font-size: var(--fs-sm); color: var(--text-2); }
+.miro-checks { font-size: var(--fs-sm); }
+.miro-checks summary { cursor: pointer; font-weight: var(--fw-semibold); }
+.miro-checks ul { margin: var(--sp-2) 0; padding-left: var(--sp-5); display: flex; flex-direction: column; gap: var(--sp-1); color: var(--text-2); }
+
+.miro-box { display: flex; flex-direction: column; gap: var(--sp-2); margin: 0 var(--sp-3) var(--sp-2); padding: var(--sp-2) var(--sp-3); border-radius: var(--r-md); background: var(--surface-2); font-size: var(--fs-sm); }
+.miro-box.has-checks { background: var(--warning-soft); box-shadow: inset 0 0 0 1px var(--warning-border); }
+.miro-box-head { display: flex; align-items: center; gap: var(--sp-2); color: var(--text-2); }
+.miro-box-head a { display: inline-flex; align-items: center; gap: var(--sp-1); }
+.miro-doubt { display: flex; flex-direction: column; gap: var(--sp-1); color: var(--warning); }
+.miro-doubt-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--sp-2); }
+.miro-infos { color: var(--text-2); }
+.miro-infos summary { cursor: pointer; }
+.miro-infos ul { margin: var(--sp-1) 0 0; padding-left: var(--sp-5); display: flex; flex-direction: column; gap: var(--sp-1); }

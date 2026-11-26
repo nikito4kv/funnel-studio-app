@@ -1,0 +1,136 @@
+/* ═════════════ Дизайн-токены Студии (этап 4) ═════════════
+   Все цвета, отступы, радиусы, тени и размеры шрифта – только отсюда. Компонент, которому
+   нужен «свой» цвет, заводит токен здесь, а не пишет hex в своём файле.
+
+   Направление: спокойная рабочая поверхность. Нейтральные серые, белые панели, один акцентный
+   синий – выделение, фокус, ссылки и главное действие. Цвет со смыслом – только у времени
+   (янтарь), условий (терракота), ошибок и успеха. Мятный фон текста – наследство досок Miro,
+   его узнают постановщики, но он стал светлее. */
+
+@import "@fontsource-variable/onest/index.css";
+
+:root {
+  /* ── шрифт ── */
+  --font-sans: "Onest Variable", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  --fs-2xs: 10.5px;
+  --fs-xs: 11.5px;
+  --fs-sm: 12.5px;
+  --fs-md: 13.5px;
+  --fs-lg: 15px;
+  --fs-xl: 18px;
+  --fs-2xl: 22px;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --lh-tight: 1.25;
+  --lh: 1.45;
+
+  /* ── отступы (шаг 4 px) ── */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  /* ── радиусы: кнопки и поля – 8, карточки и панели – 12, всплывающее – 12, модальные – 16 ── */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-full: 999px;
+
+  /* ── толщины ── */
+  --bw: 1px;
+  --bw-strong: 2px;
+
+  /* ── высоты элементов управления ── */
+  --h-xs: 22px;
+  --h-sm: 26px;
+  --h-md: 30px;
+  --h-lg: 36px;
+  --topbar-h: 52px;
+
+  /* ── нейтральные ── */
+  --bg: #f4f4f3;               /* фон приложения */
+  --canvas: #f1f1ef;           /* холст */
+  --canvas-dot: #d6d6d1;
+  --surface: #ffffff;          /* панели, карточки, поля */
+  --surface-2: #f8f8f7;        /* тихая подложка внутри панели */
+  --surface-hover: #f1f1ef;
+  --surface-active: #e9e9e6;
+  --border: #e6e5e2;
+  --border-strong: #d5d4cf;
+  --text: #1d1d1b;
+  --text-2: #5c5b57;
+  --text-3: #8a8984;
+  --text-inverse: #ffffff;
+  --ink: #1d1d1b;              /* заливка тёмной кнопки */
+  --ink-hover: #3a3a37;
+
+  /* ── акцент (один на всё) ── */
+  --accent: #2f62e0;
+  --accent-hover: #2653c6;
+  --accent-soft: #edf2fd;
+  --accent-soft-2: #dbe5fb;
+  --accent-ink: #2250c0;
+  --ring: 0 0 0 3px rgba(47, 98, 224, 0.22);
+
+  /* ── смысловые ── */
+  --success: #1e7a4c;
+  --success-soft: #eaf6ef;
+  --success-border: #c3e4d0;
+  --warning: #8a5a00;
+  --warning-soft: #fdf5e0;
+  --warning-border: #efd9a3;
+  --danger: #c2392f;
+  --danger-soft: #fdeeec;
+  --danger-border: #f2c7c2;
+
+  /* ── холст: карточка ── */
+  --mint: #e9f6ee;             /* текст сообщения (как мятный прямоугольник на доске) */
+  --mint-strong: #cfeadb;
+  --mint-ink: #1d3b2b;
+  --time-bg: #fdf3d6;          /* когда уйдёт */
+  --time-ink: #7a5300;
+  --cond-bg: #fbeee8;          /* только если… */
+  --cond-ink: #8b3b1c;
+  --edge: #75746e;             /* стрелки: на светлом холсте должны читаться и издалека */
+  --edge-strong: #45443f;
+  --edge-callback: #2f62e0;
+  --edge-survey: #1e7a4c;
+  --edge-soft: #9d9c96;
+  --edge-chain: #7a5bc4;
+  --edge-jump: #b0473a;
+  --lane-bg: rgba(29, 29, 27, 0.025);
+  --lane-border: rgba(29, 29, 27, 0.08);
+  --lane-ink: #7c7b76;
+  --sticker-yellow: #fff3b0;
+  --sticker-revision: #fde3e0;
+
+  /* ── тени ── */
+  --shadow-xs: 0 1px 2px rgba(29, 29, 27, 0.06);
+  --shadow-sm: 0 1px 3px rgba(29, 29, 27, 0.08), 0 1px 2px rgba(29, 29, 27, 0.04);
+  --shadow-pop: 0 12px 32px -8px rgba(29, 29, 27, 0.18), 0 2px 6px rgba(29, 29, 27, 0.06);
+  --shadow-modal: 0 28px 72px -16px rgba(29, 29, 27, 0.32), 0 4px 12px rgba(29, 29, 27, 0.08);
+  --scrim: rgba(24, 24, 22, 0.42);
+
+  /* ── движение ── */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --dur-fast: 120ms;
+  --dur: 180ms;
+
+  /* ── слои (z-index) ── */
+  --z-canvas-ui: 10;
+  --z-pop: 40;
+  --z-modal: 50;
+  --z-toast: 60;
+  --z-tour: 70;
+  --z-tip: 80;
+
+  color-scheme: light;
+}

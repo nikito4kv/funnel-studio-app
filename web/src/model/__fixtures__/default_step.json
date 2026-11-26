@@ -1,0 +1,103 @@
+{
+ "id": "00000000-0000-0000-0000-000000000000",
+ "key": "k",
+ "type": "text",
+ "role": null,
+ "role_day": null,
+ "title": "",
+ "content": {
+  "tg": {
+   "text": "",
+   "buttons": [],
+   "claim_button_text": null
+  },
+  "max": {
+   "text": null,
+   "buttons": null,
+   "claim_button_text": null
+  },
+  "variants": []
+ },
+ "media": {
+  "image": null,
+  "images": null,
+  "image_lm": false,
+  "video_note": null,
+  "video_fallback": null,
+  "video": null,
+  "animation": null,
+  "rich": null,
+  "media_optional": false
+ },
+ "schedule": {
+  "after_start_seconds": null,
+  "absolute_time_msk": null,
+  "day_offset": 0,
+  "day_offset_by_branch": null,
+  "webinar_offset_minutes": null,
+  "webinar_offset_by_branch": null,
+  "anchor": "webinar",
+  "skip_if_past": true,
+  "dnd_exempt": false,
+  "min_delay_seconds": 0
+ },
+ "conditions": {
+  "attendance": null,
+  "bizon_room": null,
+  "bizon_room_max": "",
+  "gate_window_hours": 4,
+  "not_paid": false,
+  "paid": false,
+  "not_course_paid": false,
+  "course_paid": false,
+  "channel": null,
+  "survey_done": false,
+  "has_lm": false,
+  "no_link_click": "",
+  "link_click": "",
+  "no_manager_dm": false,
+  "registered_windows": [],
+  "max_subscription_gate": false
+ },
+ "contact": {
+  "contact_button": "📱 Оставить номер телефона",
+  "skip_if_known": false,
+  "always_send_text": false,
+  "text_if_known": "",
+  "manual_phone_max": false,
+  "manual_phone_max_text": "",
+  "manual_phone_retry_text": ""
+ },
+ "email": {
+  "skip_if_known": false,
+  "text_if_known": "",
+  "retry_text": ""
+ },
+ "survey": {
+  "qid": null,
+  "multi": false,
+  "final": false,
+  "free": false,
+  "done_button": "✅ Готово, продолжить",
+  "edit": false
+ },
+ "call": {
+  "audio_url": null,
+  "audio_id": null,
+  "text": null
+ },
+ "sms": {
+  "text": null
+ },
+ "claim": {
+  "ack_text": null,
+  "keeps_chain": false
+ },
+ "pin": {
+  "pin": false,
+  "air_pin": false
+ },
+ "diploma_template": "",
+ "miro": null,
+ "advanced": {}
+}

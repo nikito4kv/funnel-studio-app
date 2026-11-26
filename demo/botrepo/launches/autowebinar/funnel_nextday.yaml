@@ -1,0 +1,120 @@
+id: nextday_webinar
+
+# "Webinar reminder funnel": the live session is always tomorrow at 13:00 MSK, whenever the
+# person registers. Anyone who does not show up gets a repeat the same afternoon:
+#
+#   no-show → 16:01 promo → 16:32 apology circle → 18:00 repeat link + SMS
+#
+# Timings are anchored on the webinar (`webinar_offset_minutes`) and on its repeat (`anchor: repeat`).
+branch_router:
+  type: time_of_day_msk
+  branches:
+    - id: TOMORROW
+      entry_step: w_welcome
+      webinar_time: "13:00"
+      repeat_offset_minutes: 300
+      windows:
+        - {from: "00:00", to: "23:59", day: tomorrow}
+
+steps:
+
+  - key: w_welcome
+    type: photo
+    image: ./static/auto-welcome.jpg
+    parse_mode: HTML
+    on_done: w_call_2h
+    on_done_after_seconds: 5
+    also_fire:
+      w_pre_1h: 0
+      w_live: 0
+      w_repeat_promo: 0
+      w_sorry_circle: 0
+      w_repeat_live: 0
+      w_sms_repeat: 0
+      w_day2: 0
+    text: |
+      <b>{Имя}, see you tomorrow at {webinar.time} MSK!</b>
+
+      Put it in your calendar – the live lesson starts on time.
+
+  # 2 hours before: a robot call, then the host's circle one minute later.
+  # (Same-minute absolute times would silently drop the second step.)
+  - key: w_call_2h
+    type: call
+    call_text: "Hello! This is a reminder: your workshop starts in two hours."
+    absolute_time_msk: "11:00"
+    on_done: w_2h_circle
+
+  - key: w_2h_circle
+    type: video_note
+    video_note: ./static/circle2.mp4
+    video_fallback: ./static/circle2.mp4
+    absolute_time_msk: "11:01"
+
+  - key: w_pre_1h
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: -60
+    text: |
+      <b>One hour to go</b>
+
+      Open the lesson page a few minutes early to check the sound.
+
+  - key: w_live
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 0
+    buttons:
+      - text: "▶ JOIN NOW"
+        url: "{stream_url}"
+    text: |
+      <b>We are live!</b> 👇
+
+  - key: w_repeat_promo
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 181
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+    text: |
+      <b>You missed the lesson?</b> No problem – we repeat it today at 18:00.
+
+  - key: w_sorry_circle
+    type: video_note
+    video_note: ./static/circle1.mp4
+    video_fallback: ./static/circle1.mp4
+    webinar_offset_minutes: 212
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+
+  - key: w_repeat_live
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 0
+    anchor: repeat
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+    buttons:
+      - text: "▶ JOIN THE REPEAT"
+        url: "{stream_url}"
+    text: |
+      <b>The repeat is live!</b> 👇
+
+  - key: w_sms_repeat
+    type: sms
+    sms_text: "{Имя}, the repeat starts now: example.com/live"
+    webinar_offset_minutes: 0
+    anchor: repeat
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+
+  # The second day is its own chain: someone who attended day 1 still gets it.
+  - key: w_day2
+    type: text
+    parse_mode: HTML
+    absolute_time_msk: "09:00"
+    day_offset: 1
+    text: |
+      <b>Day 2 is today</b>
+
+      Same time, same link.

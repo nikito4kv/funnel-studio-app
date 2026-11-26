@@ -1,0 +1,282 @@
+id: autowebinar_3day
+
+# Evergreen 3-day auto-webinar (fictional). The registrant lands in one of two daily
+# webinar slots depending on when they signed up (Moscow time):
+#
+#   before 12:00  → today 13:00   (branch DAY, a repeat at 18:00 for those who missed it)
+#   12:00 – 16:59 → today 18:00   (branch EVE, a repeat tomorrow at 13:00)
+#   after 17:00   → tomorrow 13:00 (branch DAY)
+#
+# Days are independent chains started by the first message (`also_fire`), so a late
+# registration never eats the next morning's message.
+branch_router:
+  type: time_of_day_msk
+  branches:
+    - id: DAY
+      entry_step: reg_hello
+      webinar_time: "13:00"
+      repeat_offset_minutes: 300
+      windows:
+        - {from: "00:00", to: "11:59", day: today}
+        - {from: "17:00", to: "23:59", day: tomorrow}
+    - id: EVE
+      entry_step: reg_hello
+      webinar_time: "18:00"
+      repeat_offset_minutes: 1140
+      windows:
+        - {from: "12:00", to: "16:59", day: today}
+
+steps:
+
+  # ── registration day ──
+  - key: reg_hello
+    type: photo
+    image: ./static/auto-welcome.jpg
+    parse_mode: HTML
+    on_done: reg_intro_a
+    on_done_after_seconds: 60
+    also_fire:
+      d1_circle: 0
+      d1_remind: 0
+      d1_live: 0
+      d1_replay: 0
+      d2_morning: 0
+      d2_remind: 0
+      d2_live: 0
+      d2_replay: 0
+      d3_morning: 0
+      d3_remind: 0
+      d3_live: 0
+      d3_replay: 0
+      d1_offer: 0
+      d1_prep: 0
+      d3_final_offer: 0
+    buttons:
+      - text: "OPEN THE CLASSROOM"
+        url: "{channel.link}"
+    text: |
+      <b>{Имя}, you are in!</b>
+
+      The 3-day "From messy data to a clean dashboard" mini-course starts with a live lesson at <b>{webinar.time} MSK</b>.
+
+      I will remind you before each lesson. Meanwhile, take a look around the classroom 👇
+
+  # Skipped for people who registered between 11:00 and 12:00 – they would get it next to the live reminder.
+  - key: reg_intro_a
+    type: text
+    parse_mode: HTML
+    skip_if_registered_msk: ["11:00-12:00"]
+    on_done: reg_intro_b
+    on_done_after_seconds: 30
+    text: |
+      <b>Let us get acquainted</b>
+
+      I am Alex, I have been automating spreadsheets for 9 years. Over the next three days you will build one working dashboard from scratch.
+
+  - key: reg_intro_b
+    type: text
+    parse_mode: HTML
+    skip_if_registered_msk: ["11:00-12:00"]
+    on_done: reg_channel
+    on_done_after_seconds: 60
+    text: |
+      <b>One question before we start</b>
+
+      What is the messiest table you work with? Reply in one message – I will use the best examples in the lessons.
+
+  - key: reg_channel
+    type: text
+    parse_mode: HTML
+    gated_by_channel_joined: not_joined
+    buttons:
+      - text: "JOIN THE CLASSROOM"
+        url: "{channel.link}"
+    text: |
+      <b>Homework and recordings live in the classroom channel</b> 👉 {channel.link}
+
+  # ── first morning: video circle + menu, the day-1 morning has usually passed already ──
+  - key: d1_circle
+    type: video_note
+    video_note: ./static/circle1.mp4
+    video_fallback: ./static/circle1.mp4
+    absolute_time_msk: "09:00"
+    skip_if_past: false
+    min_delay_seconds: 360
+    on_done: d1_menu
+    on_done_after_seconds: 120
+
+  - key: d1_menu
+    type: text
+    parse_mode: HTML
+    absolute_time_msk: "09:05"
+    skip_if_past: false
+    buttons:
+      - text: "Day 1 · Clean the data"
+        url: "{channel.link}"
+      - text: "Day 2 · Build the model"
+        url: "{channel.link}"
+      - text: "Day 3 · Draw the dashboard"
+        url: "{channel.link}"
+    text: |
+      <b>The plan for three days</b>
+
+      Day 1 – clean the data. Day 2 – build the model. Day 3 – draw the dashboard.
+
+  # ── day 1 ──
+  # Wall-clock time that differs per branch: ~3 h before the lesson, 10:10 for DAY and 15:50 for EVE.
+  - key: d1_prep
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: -170
+    webinar_offset_by_branch: {DAY: -170, EVE: -130}
+    text: |
+      <b>Prepare for the lesson</b>
+
+      Download the practice workbook and open it in your spreadsheet app.
+
+  - key: d1_remind
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: -60
+    text: |
+      <b>{Имя}, day 1 starts in one hour</b>
+
+      Open a blank workbook – we will import a messy export and clean it live.
+
+  - key: d1_live
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 0
+    buttons:
+      - text: "▶ JOIN THE LESSON"
+        url: "{stream_url}"
+    text: |
+      <b>We are live!</b> Day 1: cleaning the data 👇
+
+  - key: d1_replay
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 120
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+    buttons:
+      - text: "WATCH THE RECORDING"
+        url: "{channel.link}"
+    text: |
+      <b>Missed day 1?</b> The recording is ready – it takes 40 minutes and you will be back on track.
+
+  - key: d1_offer
+    type: photo
+    image: ./static/auto-offer.jpg
+    parse_mode: HTML
+    webinar_offset_minutes: 240
+    gated_by_not_paid: true
+    buttons:
+      - text: "🎟 GET THE FULL COURSE · $29"
+        url: "{vip_link}"
+    text: |
+      <b>Want the full course?</b>
+
+      12 lessons, templates for every case and a mentor who checks your homework.
+
+  # ── day 2 ──
+  - key: d2_morning
+    type: text
+    parse_mode: HTML
+    absolute_time_msk: "09:00"
+    day_offset: 1
+    text: |
+      <b>Good morning, {Имя}!</b> Today we turn the clean table into a model that updates itself.
+
+  - key: d2_remind
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: -60
+    day_offset: 1
+    text: |
+      <b>Day 2 starts in one hour</b>
+
+      Bring yesterday's workbook.
+
+  - key: d2_live
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 0
+    day_offset: 1
+    buttons:
+      - text: "▶ JOIN THE LESSON"
+        url: "{stream_url}"
+    text: |
+      <b>We are live!</b> Day 2: building the model 👇
+
+  - key: d2_replay
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 120
+    day_offset: 1
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+    buttons:
+      - text: "WATCH THE RECORDING"
+        url: "{channel.link}"
+    text: |
+      <b>Missed day 2?</b> Here is the recording.
+
+  # ── day 3 ──
+  - key: d3_morning
+    type: text
+    parse_mode: HTML
+    absolute_time_msk: "09:00"
+    day_offset: 2
+    text: |
+      <b>Last day, {Имя}!</b> Today the model becomes a dashboard people actually read.
+
+  - key: d3_remind
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: -60
+    day_offset: 2
+    text: |
+      <b>The final lesson starts in one hour</b>
+
+  - key: d3_live
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 0
+    day_offset: 2
+    buttons:
+      - text: "▶ JOIN THE LESSON"
+        url: "{stream_url}"
+    text: |
+      <b>We are live!</b> Day 3: the dashboard 👇
+
+  - key: d3_replay
+    type: text
+    parse_mode: HTML
+    webinar_offset_minutes: 120
+    day_offset: 2
+    gated_by_attendance: was_not
+    bizon_room: demo_room
+    buttons:
+      - text: "WATCH THE RECORDING"
+        url: "{channel.link}"
+    text: |
+      <b>Missed the final lesson?</b> The recording is waiting for you.
+
+  # The last offer goes out on the morning AFTER the repeat of day 3: the evening branch's repeat
+  # lands on the next calendar day, so the day differs per branch.
+  - key: d3_final_offer
+    type: photo
+    image: ./static/auto-offer.jpg
+    parse_mode: HTML
+    absolute_time_msk: "10:00"
+    day_offset: 3
+    day_offset_by_branch: {DAY: 3, EVE: 4}
+    gated_by_not_paid: true
+    buttons:
+      - text: "🎟 GET THE FULL COURSE · $29"
+        url: "{vip_link}"
+    text: |
+      <b>The doors close tonight</b>
+
+      Last chance to join the full course at the launch price.

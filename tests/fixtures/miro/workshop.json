@@ -1,0 +1,3144 @@
+{
+ "board_id": "uXjDemoWorkshop=",
+ "frame": {
+  "id": "7000000000000000316",
+  "type": "frame",
+  "data": {
+   "format": "custom",
+   "showContent": true,
+   "title": "ЗАПУСК 17 СЕНТЯБРЯ",
+   "type": "unknown"
+  },
+  "style": {
+   "fillColor": "#ffffff"
+  },
+  "geometry": {
+   "width": 30161.192302811254,
+   "height": 16744.44512515571
+  },
+  "position": {
+   "x": -138566.13365936835,
+   "y": 192725.13438669598,
+   "origin": "center",
+   "relativeTo": "canvas_center"
+  }
+ },
+ "items": [
+  {
+   "id": "7000000000000000456",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>СТАРТ / НАЧАТЬ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 2810.5050019043865,
+    "y": 3922.3223370419764,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000582",
+   "type": "shape",
+   "data": {
+    "content": "<p>Бесплатный практикум «Таблицы без рутины»: покажу, как автоматизировать отчёты и очистку данных — от формул до готового дашборда</p><p><br /><strong>Чтобы начать, нажимай кнопку &#x1f447;</strong></p><p><br />Нажимая /start (Начать), вы соглашаетесь на обработку персональных данных.<br />Условия использования бота — <a href=\"https://example.com/docs\">https://example.com/docs</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674268,
+    "height": 1390.7630179925918
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 2810.5050019043865,
+    "y": 3082.001117846685,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000484",
+   "type": "shape",
+   "data": {
+    "content": "<p>Привет! Поздравляю с регистрацией на практикум «Таблицы без рутины».</p><p><br />Мы встречаемся 17 сентября: один живой эфир, на котором соберём рабочий отчёт, который обновляется сам.</p><p><br /><strong>&#x1f381; А прямо сейчас забирай подарки в закрытом канале:</strong></p><p><br /><strong>Что тебя ждёт на эфире:</strong></p><p>✅ Соберём отчёт, который обновляется без ручного копирования</p><p>✅ Настроим очистку данных одной кнопкой</p><p>✅ Сделаем дашборд, который остаётся читаемым при росте данных</p><p><br /><strong>Заходи в закрытый канал, забирай подарки и готовься к практикуму.</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 2693.030863197362
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 8894.922469770625,
+    "y": 3731.0300658406522,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000694",
+   "type": "shape",
+   "data": {
+    "content": "<p>Ребят, привет! Рад видеть вас здесь.</p><p><br />Вы зарегистрировались на практикум «Таблицы без рутины». Встречаемся 17 сентября в [11] по Москве.</p><p>Я покажу, как за один вечер избавиться от ручной работы в таблицах: отчёты, очистка данных, дашборд.</p><p>Всё, что понадобится, — чистая книга и любимый кофе.</p>",
+    "shape": "circle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "open_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1509.0385678245598,
+    "height": 1566.3244579452005
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 6887.979494104571,
+    "y": 2898.144231123286,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000288",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>вход в воронку</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#659df2",
+    "fillOpacity": "1.0",
+    "fontFamily": "open_sans",
+    "fontSize": "288",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#ffffff"
+   },
+   "geometry": {
+    "width": 27594.572661125756,
+    "height": 715.3630495705729
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 14107.683839788837,
+    "y": 835.1217185541936,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000386",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p><strong>БОТ РЕГИ</strong></p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "pink",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 1125.8653353011623,
+    "height": 1289.9361630586181
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 1202.8667369934283,
+    "y": 2509.2880085297984,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000106",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ЗАБРАТЬ ПОДАРКИ<br /></strong><a href=\"https://t.me/&#43;DemoChannelInvite\">https://t.me/&#43;DemoChannelInvite</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 8894.922469770654,
+    "y": 5258.24443493631,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000715",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ</strong></p><p><a href=\"https://t.me/&#43;DemoChannelInvite\">https://t.me/&#43;DemoChannelInvite</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 8894.922469770654,
+    "y": 5457.506160858717,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000561",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Ты всё ещё не в закрытом канале? &#x1f440;</strong><br /><br />Всё самое интересное — там &#x1f449; https://t.me/&#43;DemoChannelInvite<br /><br />Внутри тебя ждут шпаргалка по формулам и пакет шаблонов, а 17 сентября там появится ссылка на эфир.</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 760.5340542716574
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 10768.068592991507,
+    "y": 2766.0953068878043,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000736",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ</strong></p><p><a href=\"https://t.me/&#43;DemoChannelInvite\">https://t.me/&#43;DemoChannelInvite</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 10768.068592991507,
+    "y": 3254.9648329710362,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000008",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>{Имя}, пока ты читаешь это в открытом канале, в закрытом уже готовятся к практикуму &#x1f440;</strong><br /><br />Внутри:<br />&#x1f4ca; шпаргалка «25 формул на одной странице»<br />&#x1f4ca; пакет из пяти шаблонов книг</p><p><a href=\"https://t.me/&#43;OldDemoInvite\">https://t.me/&#43;OldDemoInvite</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 1173.585655986095
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 12842.860667200644,
+    "y": 2633.1283777298995,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000190",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ</strong></p><p><a href=\"https://t.me/&#43;DemoChannelInvite\">https://t.me/&#43;DemoChannelInvite</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 12842.973314658886,
+    "y": 3344.315649429762,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000526",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 3 минуты если не перешел в канал</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 9875.811291041728,
+    "y": 3681.5650782536723,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000078",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 2 часа если не перешел в канал</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 11805.483453825176,
+    "y": 3254.9648329710362,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000407",
+   "type": "shape",
+   "data": {
+    "content": "<p>&#x1f92b; Псс, вам доступны условия билета</p><p>Если вы хотите:<br />• сохранить запись эфира и пересмотреть её в удобное время;<br />• получить закрытые шаблоны;<br />• разобрать свою таблицу один на один с наставником;</p><p>&#x1f449; Забрать билет за 9 долларов</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#305bab"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 2672.6478486315946
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 13878.814577711806,
+    "y": 6007.667206542323,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000400",
+   "type": "shape",
+   "data": {
+    "content": "<p>Ребят, пока вы заходите в практикум, хочу отдельно рассказать про билет.</p><p>Он для тех, кто хочет не просто посмотреть эфир, а сохранить всё себе: запись, шаблоны и разбор вашей таблицы.</p>",
+    "shape": "circle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "open_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1738.9537335149143,
+    "height": 1650.9111796428415
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 11842.007881973377,
+    "y": 4677.318117293897,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000519",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ЗАБРАТЬ ВИП БИЛЕТ <a href=\"https://example.com/old-ticket\"><br /></a></strong><a href=\"https://example.com/workshop-ticket\">https://example.com/workshop-ticket</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "0.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 13878.814577711806,
+    "y": 7457.895611684467,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000127",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 30 минут</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 10888.028892677978,
+    "y": 5869.824466199167,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000134",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 5 секунд</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 12961.247055741378,
+    "y": 5187.481027219812,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000022",
+   "type": "shape",
+   "data": {
+    "content": "<p>Имя, спасибо, что прошли опрос! Для меня это действительно ценно.<br /><br />Как и обещал, ваш стартовый набор шаблонов.<br /><br />⬇️ ⬇️ ⬇️</p>",
+    "shape": "round_rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "open_sans",
+    "fontSize": "24",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 854.334152526993,
+    "height": 336.464778778421
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 26965.54342325662,
+    "y": 4181.717866940413,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000120",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Осталось совсем чуть чуть</strong><br />Ответьте до конца и заберите в подарок стартовый набор шаблонов.<br /><br />⬇️ ⬇️ ⬇️</p>",
+    "shape": "round_rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "open_sans",
+    "fontSize": "24",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 854.334152526993,
+    "height": 315.00835307867055
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 21242.189895827207,
+    "y": 4408.771003683058,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000309",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ЗАБРАТЬ СТАРТОВЫЙ НАБОР<br /></strong><a href=\"https://example.com/starter-set\">https://example.com/starter-set</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "18",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 838.1112067798271,
+    "height": 105.89041580802427
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 26957.43195038302,
+    "y": 4451.121118073719,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000239",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ПРОЙТИ ОПРОС </strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "18",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 838.1112067798271,
+    "height": 105.89041580802427
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 21242.189895827207,
+    "y": 4656.754402542039,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000064",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ХОЧУ ОТКРЫТЬ ВАМ ЛИЧНЫЙ ПОДАРОК</strong><br /><br />Хороший шаблон экономит часы, но только если подходит под вашу работу.<br /><br />Поэтому мы собрали стартовый набор шаблонов, который можно подключить к своим книгам.</p><p>⏱️ Набор доступен только 2 часа!</p><p>⬇️ Чтобы забрать, ответьте на 3 коротких вопроса ⬇️</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674268,
+    "height": 1495.1005652481203
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 18113.27243246074,
+    "y": 4352.381293044997,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000148",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ПРОЙТИ ОПРОС</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 18113.27243246074,
+    "y": 5229.036785194465,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000015",
+   "type": "shape",
+   "data": {
+    "content": "<p>Имя, чем вы занимаетесь?</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 387.58553164031736
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 20399.5108252996,
+    "y": 2581.479971655779,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000463",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>РАБОТАЮ В НАЙМЕ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 107.92981064609378
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 20399.5108252996,
+    "y": 2873.2376427989693,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000659",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ПРЕДПРИНИМАТЕЛЬ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 107.92981064609378
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 20399.5108252996,
+    "y": 3012.483059932729,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000071",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>НА ПЕНСИИ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 107.92981064609378
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 20399.5108252996,
+    "y": 3141.3497939132103,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000421",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>РАБОТАЮ НА СЕБЯ / ФРИЛАНС / ЭКСПЕРТ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 107.92981064609378
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 20399.5108252996,
+    "y": 3269.919436108019,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000631",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>НЕ РАБОТАЮ НИГДЕ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 107.92981064609378
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 20399.5108252996,
+    "y": 3398.4890783027986,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000183",
+   "type": "shape",
+   "data": {
+    "content": "<p>Какие результаты вам важно получить? (можно выбрать несколько)</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 387.58553164031736
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.112453243462,
+    "y": 2581.479971655779,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000113",
+   "type": "shape",
+   "data": {
+    "content": "<p>Какой ваш текущий уровень владения таблицами?</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 387.58553164031736
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 23766.942174910902,
+    "y": 2581.479971655779,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000337",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>сразу после последнего вопроса</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 266.5344494411942,
+    "height": 305.37615312860447
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 27509.754778493516,
+    "y": 3983.659991734068,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000666",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 2 минуты если не нажал на кнопку</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 266.5344494411942,
+    "height": 305.37615312860447
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 19760.18049045175,
+    "y": 4930.568306891237,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000589",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 2 минуты если остановился</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 266.5344494411942,
+    "height": 305.37615312860447
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 21242.189895827207,
+    "y": 3861.612267591194,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000358",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 2 минуты если остановился</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 266.5344494411942,
+    "height": 305.37615312860447
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22979.260089356612,
+    "y": 4438.671054046823,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000155",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>если нажал пройти опрос на первом вопросе</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 266.5344494411942,
+    "height": 305.37615312860447
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 21561.964817130356,
+    "y": 4038.223005086842,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000211",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>если нажал пройти опрос на втором вопросе</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 266.5344494411942,
+    "height": 305.37615312860447
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22361.540260619135,
+    "y": 4656.754402542039,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000624",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через час</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 17163.994021495222,
+    "y": 6539.183537151421,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000533",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Ты билет на практикум так и не забрал &#x1f440;</strong><br /><br />9 долларов — и ты получаешь запись эфира, разбор своей таблицы 1:1, именной сертификат и скидку на полный курс.</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674605,
+    "height": 1742.8004838291893
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 15756.729438545533,
+    "y": 5542.743524141104,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000428",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ЗАБРАТЬ ВИП-БИЛЕТ</strong></p><p><a href=\"https://example.com/workshop-ticket\">https://example.com/workshop-ticket</a></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "0.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 15756.729438545533,
+    "y": 6539.183537151421,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000645",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>через 4 часа если НЕ нажал на кнопку випа</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 14817.729438545533,
+    "y": 6006.1316305164255,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000232",
+   "type": "shape",
+   "data": {
+    "content": "<p>Собрать отчёт быстрее</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.11245324352,
+    "y": 2868.6383104210145,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000092",
+   "type": "shape",
+   "data": {
+    "content": "<p>Освободить время</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.11245324352,
+    "y": 2996.0160896580965,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000505",
+   "type": "shape",
+   "data": {
+    "content": "<p>Найти новых клиентов</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.11245324352,
+    "y": 3113.899742347323,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000001",
+   "type": "shape",
+   "data": {
+    "content": "<p>Увеличить доход</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.11245324352,
+    "y": 3231.511623852526,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000365",
+   "type": "shape",
+   "data": {
+    "content": "<p>Наладить командный процесс</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.11245324352,
+    "y": 3349.1235053577,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000351",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Новичок</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 112.43971763997254
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 23766.942174910917,
+    "y": 2875.4925962959132,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000099",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Пробовал пару раз</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 112.43971763997254
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 23766.942174910917,
+    "y": 3020.5564604077554,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000470",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Уверенный пользователь</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 112.43971763997254
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 23766.942174910917,
+    "y": 3154.8079623349076,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000547",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Профи, использую постоянно</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 112.43971763997254
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 23766.942174910917,
+    "y": 3288.7499583313365,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000638",
+   "type": "shape",
+   "data": {
+    "content": "<p>Заменить ручные рутины</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.425686133327,
+    "y": 3478.9118131477626,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000680",
+   "type": "shape",
+   "data": {
+    "content": "<p>Работать удалённо</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.425686133327,
+    "y": 3608.6429590379594,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000477",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>✅ Готово, дальше</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 98.73114589020035
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 22083.425686133327,
+    "y": 3746.036556110881,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000687",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>БИЛЕТ САЙТчерез кабинет</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "cyan",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 1637.9017712077944,
+    "height": 1876.5909740471213
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 3733.966651826866,
+    "y": 9575.995087438369,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000162",
+   "type": "shape",
+   "data": {
+    "content": "<p>отбивка в емаил</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#fff6b6",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "144",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674268,
+    "height": 309.9458966364339
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 8749.630275208825,
+    "y": 8894.28523058775,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000414",
+   "type": "shape",
+   "data": {
+    "content": "<p>ОПЛАТИЛИ ВИП БИЛЕТ</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#659df2",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "144",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#ffffff"
+   },
+   "geometry": {
+    "width": 6341.478856125352,
+    "height": 300.2090403229345
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 6154.950240867418,
+    "y": 8469.878227276804,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000246",
+   "type": "shape",
+   "data": {
+    "content": "<p>доступ в кабинет</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#fff6b6",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "144",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674268,
+    "height": 309.9458966364339
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 8749.630275208825,
+    "y": 9255.295003583178,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000085",
+   "type": "shape",
+   "data": {
+    "content": "<p>Тема: Ваш заказ оплачен: билет на практикум «Таблицы без рутины»</p><p><br /></p><p>Ваш доступ открыт. Подарки для вас по билету:</p><p>✅ Запись эфира (сможете смотреть после [ДАТА])<br />✅ Разбор вашей таблицы 1:1<br />✅ Именной сертификат участника<br /><br /></p><p>Чтобы забрать бонусы, перейдите по кнопке ниже:</p><p>&#x1f449; <strong>ЗАЙТИ В ЛИЧНЫЙ КАБИНЕТ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674268,
+    "height": 3355.9070998196166
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 10941.020174944833,
+    "y": 10417.265832179331,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000435",
+   "type": "shape",
+   "data": {
+    "content": "<p>СТРАНИЦА СПАСИБО</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#fff6b6",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "144",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674268,
+    "height": 747.2481995523815
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 6117.837946153946,
+    "y": 10679.499651936512,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000372",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>На странице спасибо пишем, что вы получите ПИСЬМО НА ПОЧТУ, КОТОРУЮ ВЫ УКАЗАЛИ ПРИ ОПЛАТЕ</p><p><br /></p><p>В письме будут все доступы к подаркам билета.</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "orange",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 1249.7008464378036,
+    "height": 1431.8180552151719
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 6595.041499071436,
+    "y": 11639.395717558236,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000281",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>На странице оплаты пишем под полем с почтой, что на почту будут высланы доступы к подаркам</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "orange",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 1249.7008464378036,
+    "height": 1431.8180552151719
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 4181.190647532874,
+    "y": 10836.596414705291,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000603",
+   "type": "shape",
+   "data": {
+    "content": "<p>Имя, подтвердите, что вы живой человек</p><p>Нажмите кнопку ниже — так мы поймём, что на связи живой человек, а не бот, и сможем присылать вам доступы, подарки и напоминания</p><p>Нажмите «Отправить контакт» &#x1f447;</p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#000000"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 736.2167184378986
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 4913.118173140569,
+    "y": 2887.5887319390495,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000596",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>ОТПРАВИТЬ КОНТАКТ</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#ffffff",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "36",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "center",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674264,
+    "height": 151.64680493401403
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 4913.118173140569,
+    "y": 3390.9142177787326,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000442",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>5 секунд</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 7863.012230378345,
+    "y": 3344.8541232096795,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000722",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>если контакт ранее оставлял -- пропускаем этот этап</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "light_yellow",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.15000000000003,
+    "height": 421.8
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 5079.0431925364555,
+    "y": 3988.2826268429817,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000225",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>сразу если оставляет контакт </p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 5850.533033974296,
+    "y": 3255.8376202457184,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000274",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>10 секунд если не хочет оставлять контакт</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "blue",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 368.1500000000055,
+    "height": 421.8000000000063
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 5870.8215698061995,
+    "y": 2486.615999626072,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000729",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000998901180?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.8297216673836,
+    "height": 736.2167184379033
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 2810.5050019043574,
+    "y": 1981.0178289970681,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000701",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000416072264?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.8297216673975,
+    "height": 736.216718437911
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 4913.118173140569,
+    "y": 2113.987738129148,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000302",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000881760105?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.829721667447,
+    "height": 736.216718437939
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 10768.068592991507,
+    "y": 1972.8253772080243,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000575",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000749336179?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.8297216674407,
+    "height": 736.2167184379355
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 12842.860667200674,
+    "y": 1632.7807676828415,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000610",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000132533690?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.829721667471,
+    "height": 736.2167184379524
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 13878.814577711777,
+    "y": 4246.428124478687,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000617",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000346606439?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.8297216675428,
+    "height": 736.2167184379929
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 15756.729438545592,
+    "y": 4246.428124478687,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000260",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000776666644?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.8297216674669,
+    "height": 736.21671843795
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 18113.27243246074,
+    "y": 3187.3810966948986,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000568",
+   "type": "image",
+   "data": {
+    "imageUrl": "https://api.miro.com/v2/boards/uXjDemoWorkshop%3D/resources/images/7100000000967991593?format=preview&redirect=false"
+   },
+   "geometry": {
+    "width": 1308.8297216674391,
+    "height": 736.2167184379344
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 8894.922469770625,
+    "y": 1980.8865026102176,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000204",
+   "type": "shape",
+   "data": {
+    "content": "<p><strong>Введите, пожалуйста, ваш e-mail</strong></p>",
+    "shape": "rectangle"
+   },
+   "style": {
+    "fillColor": "#adf0c7",
+    "fillOpacity": "1.0",
+    "fontFamily": "noto_sans",
+    "fontSize": "48",
+    "borderColor": "#1a1a1a",
+    "borderWidth": "2.0",
+    "borderOpacity": "1.0",
+    "borderStyle": "normal",
+    "textAlign": "left",
+    "textAlignVertical": "middle",
+    "color": "#1a1a1a"
+   },
+   "geometry": {
+    "width": 1308.8297216674227,
+    "height": 387.58553164031736
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 25407.896889337833,
+    "y": 2581.479971655779,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  },
+  {
+   "id": "7000000000000000169",
+   "type": "sticky_note",
+   "data": {
+    "content": "<p>тут нужно сохранить ответ человека. и желательно проверить верный ли мейл он прислал и в случае, если это не формат мэйла - попросить ещё раз</p>",
+    "shape": "square"
+   },
+   "style": {
+    "fillColor": "green",
+    "textAlign": "center",
+    "textAlignVertical": "middle"
+   },
+   "geometry": {
+    "width": 589.7422243669382,
+    "height": 675.6845585711653
+   },
+   "parent": {
+    "id": "7000000000000000316"
+   },
+   "position": {
+    "x": 25942.195882358297,
+    "y": 3007.1275378657047,
+    "origin": "center",
+    "relativeTo": "parent_top_left"
+   }
+  }
+ ],
+ "connectors": [
+  {
+   "id": "7000000000000000652",
+   "startItem": {
+    "id": "7000000000000000106",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000736",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000176",
+   "startItem": {
+    "id": "7000000000000000715",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000736",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000554",
+   "startItem": {
+    "id": "7000000000000000736",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000190",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000197",
+   "startItem": {
+    "id": "7000000000000000400",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000407",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000330",
+   "startItem": {
+    "id": "7000000000000000106",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000400",
+    "position": {
+     "x": "50%",
+     "y": "100%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000743",
+   "startItem": {
+    "id": "7000000000000000715",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000400",
+    "position": {
+     "x": "50%",
+     "y": "100%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000540",
+   "startItem": {
+    "id": "7000000000000000204",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000022",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000267",
+   "startItem": {
+    "id": "7000000000000000148",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000015",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000043",
+   "startItem": {
+    "id": "7000000000000000015",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000183",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000253",
+   "startItem": {
+    "id": "7000000000000000183",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000113",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000708",
+   "startItem": {
+    "id": "7000000000000000148",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000239",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000498",
+   "startItem": {
+    "id": "7000000000000000015",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000120",
+    "position": {
+     "x": "50%",
+     "y": "0%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000491",
+   "startItem": {
+    "id": "7000000000000000183",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000120",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000449",
+   "startItem": {
+    "id": "7000000000000000239",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000015",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000323",
+   "startItem": {
+    "id": "7000000000000000239",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000183",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000673",
+   "startItem": {
+    "id": "7000000000000000519",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000148",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000029",
+   "startItem": {
+    "id": "7000000000000000519",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000533",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000141",
+   "startItem": {
+    "id": "7000000000000000687",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000435",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "20.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000050",
+   "startItem": {
+    "id": "7000000000000000162",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000085",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "20.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000218",
+   "startItem": {
+    "id": "7000000000000000435",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000162",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "captions": [
+    {
+     "content": "<p>Сразу после </p><p>оплаты на почту </p><p>приходит отбивка</p>",
+     "position": "50%",
+     "textAlignVertical": "middle"
+    }
+   ],
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "20.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333",
+    "color": "#333333",
+    "textOrientation": "horizontal",
+    "fontSize": "80"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000512",
+   "startItem": {
+    "id": "7000000000000000456",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000603",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000295",
+   "startItem": {
+    "id": "7000000000000000603",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000694",
+    "position": {
+     "x": "7.9031%",
+     "y": "23.0099%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000393",
+   "startItem": {
+    "id": "7000000000000000694",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000484",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000344",
+   "startItem": {
+    "id": "7000000000000000456",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000694",
+    "position": {
+     "x": "50%",
+     "y": "100%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000379",
+   "startItem": {
+    "id": "7000000000000000596",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000694"
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000036",
+   "startItem": {
+    "id": "7000000000000000519",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000414",
+    "position": {
+     "x": "50%",
+     "y": "0%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  },
+  {
+   "id": "7000000000000000057",
+   "startItem": {
+    "id": "7000000000000000113",
+    "position": {
+     "x": "100%",
+     "y": "50%"
+    }
+   },
+   "endItem": {
+    "id": "7000000000000000204",
+    "position": {
+     "x": "0%",
+     "y": "50%"
+    }
+   },
+   "shape": "elbowed",
+   "style": {
+    "startStrokeCap": "none",
+    "endStrokeCap": "rounded_stealth",
+    "strokeWidth": "16.0",
+    "strokeStyle": "normal",
+    "strokeColor": "#333333"
+   },
+   "type": "connector"
+  }
+ ]
+}

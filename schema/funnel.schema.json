@@ -1,0 +1,1925 @@
+{
+  "$defs": {
+    "Branch": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "entry_step": {
+          "format": "uuid",
+          "title": "Entry Step",
+          "type": "string"
+        },
+        "webinar_time": {
+          "title": "Webinar Time",
+          "type": "string"
+        },
+        "windows": {
+          "items": {
+            "$ref": "#/$defs/BranchWindow"
+          },
+          "title": "Windows",
+          "type": "array"
+        },
+        "repeat_offset_minutes": {
+          "default": 0,
+          "title": "Repeat Offset Minutes",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "entry_step",
+        "webinar_time",
+        "windows"
+      ],
+      "title": "Branch",
+      "type": "object"
+    },
+    "BranchRouter": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "time_of_day_msk",
+          "default": "time_of_day_msk",
+          "enum": [
+            "time_of_day_msk"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "branches": {
+          "items": {
+            "$ref": "#/$defs/Branch"
+          },
+          "title": "Branches",
+          "type": "array"
+        }
+      },
+      "required": [
+        "branches"
+      ],
+      "title": "BranchRouter",
+      "type": "object"
+    },
+    "BranchWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "title": "From",
+          "type": "string"
+        },
+        "to": {
+          "title": "To",
+          "type": "string"
+        },
+        "day": {
+          "default": "today",
+          "enum": [
+            "today",
+            "tomorrow",
+            "fixed"
+          ],
+          "title": "Day",
+          "type": "string"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date"
+        }
+      },
+      "required": [
+        "from",
+        "to"
+      ],
+      "title": "BranchWindow",
+      "type": "object"
+    },
+    "Button": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "callback_data": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Callback Data"
+        },
+        "style": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Style"
+        },
+        "web_app": {
+          "default": false,
+          "title": "Web App",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "Button",
+      "type": "object"
+    },
+    "CallSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "audio_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Audio Url"
+        },
+        "audio_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Audio Id"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        }
+      },
+      "title": "CallSettings",
+      "type": "object"
+    },
+    "ClaimSettings": {
+      "additionalProperties": false,
+      "description": "Claim-кнопка: подпись – в content.tg/max, цель – стрелка callback.",
+      "properties": {
+        "ack_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ack Text"
+        },
+        "keeps_chain": {
+          "default": false,
+          "title": "Keeps Chain",
+          "type": "boolean"
+        }
+      },
+      "title": "ClaimSettings",
+      "type": "object"
+    },
+    "CohortMatch": {
+      "additionalProperties": false,
+      "description": "«Человек пришёл по такой-то ссылке». Пустые поля не проверяются.",
+      "properties": {
+        "utm_source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Utm Source"
+        },
+        "utm_medium": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Utm Medium"
+        },
+        "utm_campaign": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Utm Campaign"
+        },
+        "trigger": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Trigger"
+        },
+        "lm_post_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lm Post Id"
+        },
+        "lm_post_id_in": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Lm Post Id In",
+          "type": "array"
+        },
+        "platforms": {
+          "default": [],
+          "items": {
+            "enum": [
+              "tg",
+              "max",
+              "vk"
+            ],
+            "type": "string"
+          },
+          "title": "Platforms",
+          "type": "array"
+        }
+      },
+      "title": "CohortMatch",
+      "type": "object"
+    },
+    "Conditions": {
+      "additionalProperties": false,
+      "description": "Когда шаг ПРОПУСКАЕТСЯ (и сразу идёт on_done). Все поля – по умолчанию «нет условия».\n\nСкрытая семантика движка: у пропущенного шага теряется `also_fire`.",
+      "properties": {
+        "attendance": {
+          "anyOf": [
+            {
+              "enum": [
+                "was",
+                "was_not"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Attendance"
+        },
+        "bizon_room": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bizon Room"
+        },
+        "bizon_room_max": {
+          "default": "",
+          "title": "Bizon Room Max",
+          "type": "string"
+        },
+        "gate_window_hours": {
+          "default": 4,
+          "title": "Gate Window Hours",
+          "type": "integer"
+        },
+        "not_paid": {
+          "default": false,
+          "title": "Not Paid",
+          "type": "boolean"
+        },
+        "paid": {
+          "default": false,
+          "title": "Paid",
+          "type": "boolean"
+        },
+        "not_course_paid": {
+          "default": false,
+          "title": "Not Course Paid",
+          "type": "boolean"
+        },
+        "course_paid": {
+          "default": false,
+          "title": "Course Paid",
+          "type": "boolean"
+        },
+        "channel": {
+          "anyOf": [
+            {
+              "enum": [
+                "joined",
+                "not_joined"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Channel"
+        },
+        "survey_done": {
+          "default": false,
+          "title": "Survey Done",
+          "type": "boolean"
+        },
+        "has_lm": {
+          "default": false,
+          "title": "Has Lm",
+          "type": "boolean"
+        },
+        "no_link_click": {
+          "default": "",
+          "title": "No Link Click",
+          "type": "string"
+        },
+        "link_click": {
+          "default": "",
+          "title": "Link Click",
+          "type": "string"
+        },
+        "no_manager_dm": {
+          "default": false,
+          "title": "No Manager Dm",
+          "type": "boolean"
+        },
+        "registered_windows": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Registered Windows",
+          "type": "array"
+        },
+        "max_subscription_gate": {
+          "default": false,
+          "title": "Max Subscription Gate",
+          "type": "boolean"
+        }
+      },
+      "title": "Conditions",
+      "type": "object"
+    },
+    "ContactSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "contact_button": {
+          "default": "📱 Оставить номер телефона",
+          "title": "Contact Button",
+          "type": "string"
+        },
+        "skip_if_known": {
+          "default": false,
+          "title": "Skip If Known",
+          "type": "boolean"
+        },
+        "always_send_text": {
+          "default": false,
+          "title": "Always Send Text",
+          "type": "boolean"
+        },
+        "text_if_known": {
+          "default": "",
+          "title": "Text If Known",
+          "type": "string"
+        },
+        "manual_phone_max": {
+          "default": false,
+          "title": "Manual Phone Max",
+          "type": "boolean"
+        },
+        "manual_phone_max_text": {
+          "default": "",
+          "title": "Manual Phone Max Text",
+          "type": "string"
+        },
+        "manual_phone_retry_text": {
+          "default": "",
+          "title": "Manual Phone Retry Text",
+          "type": "string"
+        }
+      },
+      "title": "ContactSettings",
+      "type": "object"
+    },
+    "Content": {
+      "additionalProperties": false,
+      "properties": {
+        "tg": {
+          "$ref": "#/$defs/TgContent",
+          "default": {
+            "text": "",
+            "buttons": [],
+            "claim_button_text": null
+          }
+        },
+        "max": {
+          "$ref": "#/$defs/MaxContent",
+          "default": {
+            "text": null,
+            "buttons": null,
+            "claim_button_text": null
+          }
+        },
+        "variants": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/StepVariant"
+          },
+          "title": "Variants",
+          "type": "array"
+        }
+      },
+      "title": "Content",
+      "type": "object"
+    },
+    "Edge": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "from_step": {
+          "format": "uuid",
+          "title": "From Step",
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/EdgeKind"
+        },
+        "to_step": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Step"
+        },
+        "to_funnel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Funnel"
+        },
+        "delay_seconds": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Delay Seconds"
+        },
+        "typing_before": {
+          "default": false,
+          "title": "Typing Before",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "from_step",
+        "kind"
+      ],
+      "title": "Edge",
+      "type": "object"
+    },
+    "EdgeKind": {
+      "enum": [
+        "done",
+        "contact",
+        "skip",
+        "skip_if_phone_known",
+        "email",
+        "skip_if_email_known",
+        "callback",
+        "survey_next",
+        "jump",
+        "also_fire",
+        "chain_to_funnel"
+      ],
+      "title": "EdgeKind",
+      "type": "string"
+    },
+    "EmailSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "skip_if_known": {
+          "default": false,
+          "title": "Skip If Known",
+          "type": "boolean"
+        },
+        "text_if_known": {
+          "default": "",
+          "title": "Text If Known",
+          "type": "string"
+        },
+        "retry_text": {
+          "default": "",
+          "title": "Retry Text",
+          "type": "string"
+        }
+      },
+      "title": "EmailSettings",
+      "type": "object"
+    },
+    "EntryVariant": {
+      "additionalProperties": false,
+      "properties": {
+        "when": {
+          "$ref": "#/$defs/CohortMatch",
+          "default": {
+            "utm_source": null,
+            "utm_medium": null,
+            "utm_campaign": null,
+            "trigger": null,
+            "lm_post_id": null,
+            "lm_post_id_in": [],
+            "platforms": []
+          }
+        },
+        "entry_step": {
+          "format": "uuid",
+          "title": "Entry Step",
+          "type": "string"
+        }
+      },
+      "required": [
+        "entry_step"
+      ],
+      "title": "EntryVariant",
+      "type": "object"
+    },
+    "Lane": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "kind": {
+          "default": "",
+          "title": "Kind",
+          "type": "string"
+        },
+        "day": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Day"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "step_ids": {
+          "default": [],
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Step Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title"
+      ],
+      "title": "Lane",
+      "type": "object"
+    },
+    "Layout": {
+      "additionalProperties": false,
+      "properties": {
+        "positions": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Position"
+          },
+          "default": {},
+          "title": "Positions",
+          "type": "object"
+        }
+      },
+      "title": "Layout",
+      "type": "object"
+    },
+    "MaxContent": {
+      "additionalProperties": false,
+      "description": "Переопределения для MAX. None = как в TG; \"\" / [] = в MAX этого нет.",
+      "properties": {
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        },
+        "buttons": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Button"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Buttons"
+        },
+        "claim_button_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Claim Button Text"
+        }
+      },
+      "title": "MaxContent",
+      "type": "object"
+    },
+    "Media": {
+      "additionalProperties": false,
+      "properties": {
+        "image": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Image"
+        },
+        "images": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Images"
+        },
+        "image_lm": {
+          "default": false,
+          "title": "Image Lm",
+          "type": "boolean"
+        },
+        "video_note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Video Note"
+        },
+        "video_fallback": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Video Fallback"
+        },
+        "video": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Video"
+        },
+        "animation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Animation"
+        },
+        "rich": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rich"
+        },
+        "media_optional": {
+          "default": false,
+          "title": "Media Optional",
+          "type": "boolean"
+        }
+      },
+      "title": "Media",
+      "type": "object"
+    },
+    "MiroDoubt": {
+      "additionalProperties": false,
+      "description": "Место, в котором импорт не уверен (или сделал что-то по правилу, а не по доске).\n\nlevel: check – стоит проверить (подсветка на холсте и в «Проверке»), info – сделано\nпо правилу, для сведения.",
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "item_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "level": {
+          "default": "check",
+          "enum": [
+            "check",
+            "info"
+          ],
+          "title": "Level",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "text"
+      ],
+      "title": "MiroDoubt",
+      "type": "object"
+    },
+    "MiroSource": {
+      "additionalProperties": false,
+      "description": "Воронка импортирована из фрейма Miro. В yaml не уходит.",
+      "properties": {
+        "board_id": {
+          "title": "Board Id",
+          "type": "string"
+        },
+        "frame_id": {
+          "title": "Frame Id",
+          "type": "string"
+        },
+        "frame_title": {
+          "default": "",
+          "title": "Frame Title",
+          "type": "string"
+        },
+        "link": {
+          "default": "",
+          "title": "Link",
+          "type": "string"
+        },
+        "imported_at": {
+          "default": "",
+          "title": "Imported At",
+          "type": "string"
+        },
+        "doubts": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MiroDoubt"
+          },
+          "title": "Doubts",
+          "type": "array"
+        },
+        "dismissed": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Dismissed",
+          "type": "array"
+        },
+        "entry_item": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Entry Item"
+        },
+        "edges_base": {
+          "default": [],
+          "items": {
+            "type": "object"
+          },
+          "title": "Edges Base",
+          "type": "array"
+        },
+        "bot_description": {
+          "default": "",
+          "title": "Bot Description",
+          "type": "string"
+        }
+      },
+      "required": [
+        "board_id",
+        "frame_id"
+      ],
+      "title": "MiroSource",
+      "type": "object"
+    },
+    "MiroStep": {
+      "additionalProperties": false,
+      "description": "Шаг собран импортом из Miro. В yaml не уходит.",
+      "properties": {
+        "item_id": {
+          "title": "Item Id",
+          "type": "string"
+        },
+        "item_ids": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Item Ids",
+          "type": "array"
+        },
+        "doubts": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MiroDoubt"
+          },
+          "title": "Doubts",
+          "type": "array"
+        },
+        "dismissed": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Dismissed",
+          "type": "array"
+        },
+        "board": {
+          "default": {},
+          "title": "Board",
+          "type": "object"
+        }
+      },
+      "required": [
+        "item_id"
+      ],
+      "title": "MiroStep",
+      "type": "object"
+    },
+    "Note": {
+      "additionalProperties": false,
+      "description": "Заметка или правка. Отдельный тип объекта – в бот не уходит никогда.",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "default": "note",
+          "enum": [
+            "note",
+            "revision"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "color": {
+          "default": "#fff6b6",
+          "title": "Color",
+          "type": "string"
+        },
+        "step_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Step Id"
+        },
+        "lane_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lane Id"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Position"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "author": {
+          "default": "",
+          "title": "Author",
+          "type": "string"
+        },
+        "created_at": {
+          "default": "",
+          "title": "Created At",
+          "type": "string"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Number"
+        },
+        "action": {
+          "anyOf": [
+            {
+              "enum": [
+                "replace_text",
+                "replace_media",
+                "replace_time",
+                "add",
+                "remove",
+                "other"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Action"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "enum": [
+                "open",
+                "done",
+                "accepted",
+                "rejected"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        }
+      },
+      "required": [
+        "id",
+        "text"
+      ],
+      "title": "Note",
+      "type": "object"
+    },
+    "PinSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "pin": {
+          "default": false,
+          "title": "Pin",
+          "type": "boolean"
+        },
+        "air_pin": {
+          "default": false,
+          "title": "Air Pin",
+          "type": "boolean"
+        }
+      },
+      "title": "PinSettings",
+      "type": "object"
+    },
+    "Position": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "title": "Y",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "Position",
+      "type": "object"
+    },
+    "Schedule": {
+      "additionalProperties": false,
+      "description": "Абсолютная часть времени. Относительная задержка живёт на стрелке.\n\nРежимы (см. `mode`):\n  chain   – ни часов, ни эфира: шаг приходит по входящей стрелке;\n  clock   – `absolute_time_msk` + `day_offset` (или `day_offset_by_branch`);\n  webinar – `webinar_offset_minutes` от эфира/повтора (`anchor`), опц.\n            `webinar_offset_by_branch`; перебивает clock, если заданы оба.",
+      "properties": {
+        "after_start_seconds": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "After Start Seconds"
+        },
+        "absolute_time_msk": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Absolute Time Msk"
+        },
+        "day_offset": {
+          "default": 0,
+          "title": "Day Offset",
+          "type": "integer"
+        },
+        "day_offset_by_branch": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "integer"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Day Offset By Branch"
+        },
+        "webinar_offset_minutes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Webinar Offset Minutes"
+        },
+        "webinar_offset_by_branch": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "integer"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Webinar Offset By Branch"
+        },
+        "anchor": {
+          "default": "webinar",
+          "enum": [
+            "webinar",
+            "repeat"
+          ],
+          "title": "Anchor",
+          "type": "string"
+        },
+        "skip_if_past": {
+          "default": true,
+          "title": "Skip If Past",
+          "type": "boolean"
+        },
+        "dnd_exempt": {
+          "default": false,
+          "title": "Dnd Exempt",
+          "type": "boolean"
+        },
+        "min_delay_seconds": {
+          "default": 0,
+          "title": "Min Delay Seconds",
+          "type": "integer"
+        }
+      },
+      "title": "Schedule",
+      "type": "object"
+    },
+    "SmsSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        }
+      },
+      "title": "SmsSettings",
+      "type": "object"
+    },
+    "SourceInfo": {
+      "additionalProperties": false,
+      "description": "Откуда импортирована воронка (в yaml не уходит).",
+      "properties": {
+        "launch": {
+          "title": "Launch",
+          "type": "string"
+        },
+        "path": {
+          "default": "",
+          "title": "Path",
+          "type": "string"
+        },
+        "extends": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Extends"
+        },
+        "own_keys": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Own Keys",
+          "type": "array"
+        }
+      },
+      "required": [
+        "launch"
+      ],
+      "title": "SourceInfo",
+      "type": "object"
+    },
+    "Step": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/$defs/StepType",
+          "default": "text"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StepRole"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "role_day": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role Day"
+        },
+        "title": {
+          "default": "",
+          "title": "Title",
+          "type": "string"
+        },
+        "content": {
+          "$ref": "#/$defs/Content",
+          "default": {
+            "tg": {
+              "buttons": [],
+              "claim_button_text": null,
+              "text": ""
+            },
+            "max": {
+              "buttons": null,
+              "claim_button_text": null,
+              "text": null
+            },
+            "variants": []
+          }
+        },
+        "media": {
+          "$ref": "#/$defs/Media",
+          "default": {
+            "image": null,
+            "images": null,
+            "image_lm": false,
+            "video_note": null,
+            "video_fallback": null,
+            "video": null,
+            "animation": null,
+            "rich": null,
+            "media_optional": false
+          }
+        },
+        "schedule": {
+          "$ref": "#/$defs/Schedule",
+          "default": {
+            "after_start_seconds": null,
+            "absolute_time_msk": null,
+            "day_offset": 0,
+            "day_offset_by_branch": null,
+            "webinar_offset_minutes": null,
+            "webinar_offset_by_branch": null,
+            "anchor": "webinar",
+            "skip_if_past": true,
+            "dnd_exempt": false,
+            "min_delay_seconds": 0
+          }
+        },
+        "conditions": {
+          "$ref": "#/$defs/Conditions",
+          "default": {
+            "attendance": null,
+            "bizon_room": null,
+            "bizon_room_max": "",
+            "gate_window_hours": 4,
+            "not_paid": false,
+            "paid": false,
+            "not_course_paid": false,
+            "course_paid": false,
+            "channel": null,
+            "survey_done": false,
+            "has_lm": false,
+            "no_link_click": "",
+            "link_click": "",
+            "no_manager_dm": false,
+            "registered_windows": [],
+            "max_subscription_gate": false
+          }
+        },
+        "contact": {
+          "$ref": "#/$defs/ContactSettings",
+          "default": {
+            "contact_button": "📱 Оставить номер телефона",
+            "skip_if_known": false,
+            "always_send_text": false,
+            "text_if_known": "",
+            "manual_phone_max": false,
+            "manual_phone_max_text": "",
+            "manual_phone_retry_text": ""
+          }
+        },
+        "email": {
+          "$ref": "#/$defs/EmailSettings",
+          "default": {
+            "skip_if_known": false,
+            "text_if_known": "",
+            "retry_text": ""
+          }
+        },
+        "survey": {
+          "$ref": "#/$defs/SurveySettings",
+          "default": {
+            "qid": null,
+            "multi": false,
+            "final": false,
+            "free": false,
+            "done_button": "✅ Готово, продолжить",
+            "edit": false
+          }
+        },
+        "call": {
+          "$ref": "#/$defs/CallSettings",
+          "default": {
+            "audio_url": null,
+            "audio_id": null,
+            "text": null
+          }
+        },
+        "sms": {
+          "$ref": "#/$defs/SmsSettings",
+          "default": {
+            "text": null
+          }
+        },
+        "claim": {
+          "$ref": "#/$defs/ClaimSettings",
+          "default": {
+            "ack_text": null,
+            "keeps_chain": false
+          }
+        },
+        "pin": {
+          "$ref": "#/$defs/PinSettings",
+          "default": {
+            "pin": false,
+            "air_pin": false
+          }
+        },
+        "diploma_template": {
+          "default": "",
+          "title": "Diploma Template",
+          "type": "string"
+        },
+        "miro": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MiroStep"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "advanced": {
+          "default": {},
+          "title": "Advanced",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "key"
+      ],
+      "title": "Step",
+      "type": "object"
+    },
+    "StepRole": {
+      "description": "Роль шага для дашбордов (исследование, §8.2). На этапе 0 не заполняется.",
+      "enum": [
+        "entry",
+        "contact",
+        "email",
+        "channel_invite",
+        "channel_nudge",
+        "vip_offer",
+        "vip_nudge",
+        "survey_q",
+        "survey_final",
+        "gift",
+        "air_announce",
+        "air_start",
+        "air_repeat",
+        "offer",
+        "sale",
+        "handoff"
+      ],
+      "title": "StepRole",
+      "type": "string"
+    },
+    "StepType": {
+      "enum": [
+        "text",
+        "photo",
+        "video_note",
+        "video",
+        "animation",
+        "rich",
+        "phone_request",
+        "email_request",
+        "jump",
+        "call",
+        "sms",
+        "air_pin"
+      ],
+      "title": "StepType",
+      "type": "string"
+    },
+    "StepVariant": {
+      "additionalProperties": false,
+      "description": "Другая формулировка того же шага для когорты. None = «как в шаге».",
+      "properties": {
+        "when": {
+          "$ref": "#/$defs/CohortMatch",
+          "default": {
+            "utm_source": null,
+            "utm_medium": null,
+            "utm_campaign": null,
+            "trigger": null,
+            "lm_post_id": null,
+            "lm_post_id_in": [],
+            "platforms": []
+          }
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text"
+        },
+        "text_max": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text Max"
+        },
+        "buttons": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Button"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Buttons"
+        },
+        "claim_button_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Claim Button Text"
+        }
+      },
+      "title": "StepVariant",
+      "type": "object"
+    },
+    "SurveySettings": {
+      "additionalProperties": false,
+      "properties": {
+        "qid": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qid"
+        },
+        "multi": {
+          "default": false,
+          "title": "Multi",
+          "type": "boolean"
+        },
+        "final": {
+          "default": false,
+          "title": "Final",
+          "type": "boolean"
+        },
+        "free": {
+          "default": false,
+          "title": "Free",
+          "type": "boolean"
+        },
+        "done_button": {
+          "default": "✅ Готово, продолжить",
+          "title": "Done Button",
+          "type": "string"
+        },
+        "edit": {
+          "default": false,
+          "title": "Edit",
+          "type": "boolean"
+        }
+      },
+      "title": "SurveySettings",
+      "type": "object"
+    },
+    "TgContent": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "default": "",
+          "title": "Text",
+          "type": "string"
+        },
+        "buttons": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Button"
+          },
+          "title": "Buttons",
+          "type": "array"
+        },
+        "claim_button_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Claim Button Text"
+        }
+      },
+      "title": "TgContent",
+      "type": "object"
+    },
+    "UnresolvedRef": {
+      "additionalProperties": false,
+      "description": "Ссылка на шаг, которого в воронке нет (движок: «Unknown step»).\n\nХранится, чтобы круг был без потерь, и чтобы предполёт мог показать её\nкрасной стрелкой в никуда.",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "key"
+      ],
+      "title": "UnresolvedRef",
+      "type": "object"
+    },
+    "WebinarRoom": {
+      "additionalProperties": false,
+      "properties": {
+        "stream_url": {
+          "default": "",
+          "title": "Stream Url",
+          "type": "string"
+        },
+        "bizon_room": {
+          "default": "",
+          "title": "Bizon Room",
+          "type": "string"
+        },
+        "replaces_room": {
+          "default": "",
+          "title": "Replaces Room",
+          "type": "string"
+        }
+      },
+      "title": "WebinarRoom",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "enum": [
+        1
+      ],
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "default": "",
+      "title": "Title",
+      "type": "string"
+    },
+    "source": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SourceInfo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "branch_router": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/BranchRouter"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "entry_variants": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/EntryVariant"
+      },
+      "title": "Entry Variants",
+      "type": "array"
+    },
+    "webinar_room": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/WebinarRoom"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "air_email_profile": {
+      "default": "",
+      "title": "Air Email Profile",
+      "type": "string"
+    },
+    "max_video_note_caption": {
+      "default": true,
+      "title": "Max Video Note Caption",
+      "type": "boolean"
+    },
+    "resend_entry_on_repeat": {
+      "default": false,
+      "title": "Resend Entry On Repeat",
+      "type": "boolean"
+    },
+    "steps": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Step"
+      },
+      "title": "Steps",
+      "type": "array"
+    },
+    "edges": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Edge"
+      },
+      "title": "Edges",
+      "type": "array"
+    },
+    "unresolved": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/UnresolvedRef"
+      },
+      "title": "Unresolved",
+      "type": "array"
+    },
+    "lanes": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Lane"
+      },
+      "title": "Lanes",
+      "type": "array"
+    },
+    "layout": {
+      "$ref": "#/$defs/Layout",
+      "default": {
+        "positions": {}
+      }
+    },
+    "notes": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Note"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "miro": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/MiroSource"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "title": "Funnel",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://funnel-studio.local/schema/funnel.schema.json"
+}

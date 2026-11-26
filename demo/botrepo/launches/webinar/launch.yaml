@@ -1,0 +1,36 @@
+slug: webinar
+display_name: "Spreadsheet Automation Workshop (Sept 17)"
+short_name: "Workshop 17.09"
+
+bot:
+  tg:
+    enabled: true
+    token_env: WEBINAR_BOT_TOKEN
+    username: northwind_workshop_bot
+  max:
+    enabled: true
+    payload_prefix: webinar_
+    shared_token_env: MAX_BOT_TOKEN
+    # link for marketers: https://max.ru/northwind_demo_max_bot?start=webinar_reg_<src>
+
+funnel: ./funnel.yaml
+
+channel:
+  link: "https://t.me/+DemoChannelInvite"
+  title: "Spreadsheet Automation Workshop"
+  chat_id: -1001234567890
+  max_link: "https://max.ru/join/demo-invite"
+  max_chat_id: 0
+  max_gate_fallback: send
+
+webinar:
+  datetime_msk: "2026-09-17T11:00"
+  stream_url: ""
+  gift_url: "https://example.com/workshop-ticket"
+
+features:
+  dnd:
+    enabled: true
+    from: "21:00"
+    to: "09:00"
+    reschedule_to: "09:01"

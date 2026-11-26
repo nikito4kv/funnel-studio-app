@@ -1,0 +1,6 @@
+# Same funnel for a partner's audience: only the room and the entry cohort differ,
+# the steps always stay identical to the parent.
+extends: funnel.yaml
+id: webinar_partner
+webinar_room:
+  stream_url: "https://example.com/partner-room"

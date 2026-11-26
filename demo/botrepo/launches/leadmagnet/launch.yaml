@@ -1,0 +1,20 @@
+slug: leadmagnet
+display_name: "Lead magnet: formula cheat-sheet"
+short_name: "Cheat-sheet"
+
+bot:
+  tg:
+    enabled: true
+    token_env: LEADMAGNET_BOT_TOKEN
+    username: northwind_sheets_bot
+
+funnel: ./funnel.yaml
+
+channel:
+  link: "https://t.me/+DemoSheetsInvite"
+  title: "Northwind Sheets"
+  chat_id: 0
+
+webinar:
+  datetime_msk: ""
+  gift_url: "https://example.com/cheat-sheet"

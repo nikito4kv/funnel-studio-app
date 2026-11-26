@@ -1,0 +1,123 @@
+id: leadmagnet_cheatsheet
+
+# "Lead magnet funnel" (fictional): a free formula cheat-sheet in exchange for an e-mail,
+# then a branch by the button the person presses and a different welcome text per traffic source.
+#
+#   /start → m_hello  (text differs by utm_source: ads / blog / default)
+#         → m_email   "where should I send it?"
+#              ├ e-mail given → m_deliver → +1 h → m_choose (one claim button)
+#              └ already known → m_deliver
+#   m_choose ── button pressed → m_path_reports → +10 min → m_poll_jump → m_final
+#            └─ no press for 1 day → m_nudge → +2 h → m_final
+
+steps:
+
+  - key: m_hello
+    type: photo
+    image: ./static/cheatsheet.jpg
+    parse_mode: HTML
+    on_done: m_email
+    on_done_after_seconds: 3
+    variants:
+      - when_utm_source: ads
+        text: |
+          <b>{Имя}, you came from our ad – here is your free cheat-sheet!</b>
+
+          25 formulas on one page. Tell me where to send it.
+      - when_utm_source: blog
+        text: |
+          <b>{Имя}, glad you liked the article!</b>
+
+          The formula cheat-sheet from the post is ready for you. Tell me where to send it.
+    text: |
+      <b>{Имя}, welcome!</b>
+
+      Your free formula cheat-sheet is almost yours. Tell me where to send it.
+
+  - key: m_email
+    type: email_request
+    skip_if_user_email_known: true
+    on_skip_if_email_known: m_deliver
+    on_skip_if_email_known_after_seconds: 1
+    on_email: m_deliver
+    on_email_after_seconds: 2
+    email_retry_text: |
+      That does not look like an e-mail 🙈 Send it in the form name@example.com.
+    text: |
+      <b>What is your e-mail?</b>
+
+      I will send the PDF there and nothing else without your consent.
+    text_if_email_known: |
+      You are already in the list – sending the cheat-sheet to your e-mail.
+
+  - key: m_deliver
+    type: text
+    parse_mode: HTML
+    on_done: m_choose
+    on_done_after_seconds: 3600
+    buttons:
+      - text: "📄 OPEN THE CHEAT-SHEET"
+        url: "{channel.link}"
+    text: |
+      <b>Done!</b> Check your inbox – and here is a direct link 👇
+
+  - key: m_choose
+    type: text
+    parse_mode: HTML
+    claim_button_text: "📊 I BUILD REPORTS"
+    on_callback: m_path_reports
+    on_done: m_nudge
+    on_done_after_seconds: 86400
+    text: |
+      <b>What do you do with spreadsheets most often?</b>
+
+      Pick one – I will send you the lesson that fits.
+
+  - key: m_path_reports
+    type: text
+    parse_mode: HTML
+    on_done: m_poll_jump
+    on_done_after_seconds: 600
+    text: |
+      <b>Reports: three habits that save an hour a day</b>
+
+      1. One source sheet, many views.
+      2. Named ranges instead of cell addresses.
+      3. A "last refreshed" cell that never lies.
+
+  - key: m_poll_jump
+    type: jump
+    jump_to: m_final
+
+  - key: m_nudge
+    type: text
+    parse_mode: HTML
+    on_done: m_final
+    on_done_after_seconds: 7200
+    text: |
+      <b>{Имя}, still there?</b>
+
+      Tell me what you build most often and I will pick the right lesson.
+
+  - key: m_final
+    type: photo
+    image: ./static/cheatsheet.jpg
+    parse_mode: HTML
+    claim_button_text: "🎟 SEE THE FULL COURSE"
+    on_callback: m_course
+    claim_keeps_chain: true
+    text: |
+      <b>That is all for the free part</b>
+
+      If you want to go deeper, the full course covers 12 lessons with templates.
+
+  - key: m_course
+    type: text
+    parse_mode: HTML
+    buttons:
+      - text: "OPEN THE COURSE PAGE"
+        url: "https://example.com/course"
+    text: |
+      <b>The full course</b>
+
+      12 lessons, templates for every case and feedback on your homework.
